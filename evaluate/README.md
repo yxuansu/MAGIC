@@ -7,22 +7,14 @@ To run the evaluation script, you need to first download the Standford models vi
 chmod +x ./get_stanford_models.sh
 ./get_stanford_models.sh
 ```
+#### 2. Perform Evaluation:
 
-
-### 1. get the stanford models
-1. Environment Setup
-2
-
-```bash
-
+To evaluate the model's generated result, you can run the following command:
+```yaml
+chmod +x ./evaluation.sh
+./evaluation.sh
 ```
 
-### 2. change the inference results
+To evaluate different files, you should change the path of the --result_file_path argument in the script.
 
-change the path of the inference results file in the cocoeval.py
-
-### 3. evaluate
-
-```bash
-python cocoeval.py
-```
+**[Note]** We have rigorously tested the evaluation scripts in Ubuntu 16.04 system. However, 
