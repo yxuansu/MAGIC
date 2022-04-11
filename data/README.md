@@ -28,4 +28,4 @@ The json files contain a list of dictory, where the data format of each dictiona
 }
 ```
 
-We also share our post-processed MSCOCO benchmark. You can directly download it via this [[link]](https://drive.google.com/file/d/1J922lIqzXpLfqfWd2-F3ZI3mW59lqlBu/view?usp=sharing). After downloading, you should unzip the downloaded mscoco.zip under the current directory.
+We also share our post-processed MSCOCO benchmark. You can directly download it via this [[link]](https://drive.google.com/file/d/1J922lIqzXpLfqfWd2-F3ZI3mW59lqlBu/view?usp=sharing). After downloading, you should unzip the downloaded **mscoco.zip** file under the current directory.
