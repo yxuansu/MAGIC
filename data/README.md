@@ -16,3 +16,14 @@ python process_mscoco.py
         ├── mscoco_val.json # Contains the validation set text captions of MSCOCO
         ├── mscoco_test.json # Contains the test set text captions of MSCOCO
         └── test_images # Contains the test set images of MSCOCO
+        
+The json files contain a list of dictory, where the data format of each dictionary is:
+
+```yaml
+{  
+   "split": Indicating which split (train, val, or test) the data instance belongs to.
+   "image_name": The name of the corresponding image.
+   "file_path": Where to find the corresponding image from the raw MSCOCO files.
+   "captions": A list of captions that the data instance contains.
+}
+```
