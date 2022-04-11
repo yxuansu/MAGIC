@@ -1,6 +1,6 @@
 ### To Obtain Image Caption Evaluation Results
 
-1. Evaluation Setup:
+#### 1. Environment Setup:
 
 To run the evaluation script, you need to first download the Standford models via the following command:
 ```yaml
