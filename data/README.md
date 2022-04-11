@@ -7,3 +7,12 @@ After downloading the raw data, run the following command:
 ```yaml
 python process_mscoco.py
 ```
+
+> **** The resulting post-processed MSCOCO benchmark looks like:
+
+    .
+    ├── ./mscoco/                    
+        ├── mscoco_train.json # Contains the training set text captions of MSCOCO
+        ├── mscoco_val.json # Contains the validation set text captions of MSCOCO
+        ├── mscoco_test.json # Contains the test set text captions of MSCOCO
+        └── test_images # Contains the test set images of MSCOCO
