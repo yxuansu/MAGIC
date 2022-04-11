@@ -1,9 +1,20 @@
-## Obtain the Evaluation Results
+### To Obtain Image Caption Evaluation Results
+
+1. Evaluation Setup:
+
+To run the evaluation script, you need to first download the Standford models via the following command:
+```yaml
+chmod +x ./get_stanford_models.sh
+./get_stanford_models.sh
+```
+
 
 ### 1. get the stanford models
+1. Environment Setup
+2
 
 ```bash
-./get_stanford_models.sh
+
 ```
 
 ### 2. change the inference results
