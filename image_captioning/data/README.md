@@ -46,8 +46,11 @@ The json files contain a list of dictory, where the data format of each dictiona
 
 We also provide the scripts that help you recreate the post-processed MSCOCO benchmark.
 
+- (1) Download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_data).
+- (2) Download the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_images).
 
-To post-processing the MSCOCO benchmark, please first download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_data). Then, downloading the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_images).
+
+To post-processing the MSCOCO benchmark, please  Then, 
 
 After downloading the raw data, run the following command:
 ```yaml
