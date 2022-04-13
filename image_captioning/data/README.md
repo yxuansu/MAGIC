@@ -95,7 +95,7 @@ The json files contain a list of dictory, where the data format of each dictiona
 
 #### 2.2. Post-process Data by Yourself:
 
-We also provide the scripts that help you recreate the post-processed MSCOCO benchmark.
+We also provide the scripts that help you recreate the post-processed Flickr30k benchmark.
 
 - (1) Download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_data).
 - (2) Download the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_images#2-download-flickr30k-raw-images).
