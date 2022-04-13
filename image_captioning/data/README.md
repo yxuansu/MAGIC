@@ -6,6 +6,7 @@
     * <a href='#download_mscoco'>1.1. Download Post-processed Data</a>
     * <a href='#postprocess_mscoco'>1.2. Post-process Data by Yourself</a>
 * <a href='#flickr30k'>2. Flickr30k Benchmark</a>
+    * <a href='#download_flickr30k'>1.1. Download Post-processed Data</a>
 
 
 ****
@@ -65,6 +66,30 @@ python process_mscoco.py
 
 ### 2. Flickr30k Benchmark:
 
+<span id='download_flickr30k'/>
+
+#### 1.1. Download Post-processed Data:
+
+You can directly download our post-processed MSCOCO benchmark via this [[link]](https://drive.google.com/file/d/1i8-v-U3qlhK9uW_RzV3iV8IRJlKTpcBZ/view?usp=sharing). After downloading, you should unzip the downloaded **flickr30k.zip** file under the current directory.
+
+> **** The resulting post-processed Flickr30k benchmark looks like:
+
+    .
+    ├── ./flickr30k/                    
+        ├── flickr30k_train.json # Contains the training set text captions of Flickr30k
+        ├── flickr30k_val.json # Contains the validation set text captions of Flickr30k
+        ├── flickr30k_test.json # Contains the test set text captions of Flickr30k
+        └── test_images # Contains the test set images of Flickr30k
+        
+The json files contain a list of dictory, where the data format of each dictionary is:
+
+```yaml
+{  
+   "split": Indicating which split (train, val, or test) the data instance belongs to.
+   "image_name": The name of the corresponding image.
+   "captions": A list of captions that the data instance contains.
+}
+```
 
 
 
