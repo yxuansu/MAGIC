@@ -7,6 +7,7 @@
     * <a href='#postprocess_mscoco'>1.2. Post-process Data by Yourself</a>
 * <a href='#flickr30k'>2. Flickr30k Benchmark</a>
     * <a href='#download_flickr30k'>1.1. Download Post-processed Data</a>
+    * <a href='#postprocess_flickr30k'>2.2. Post-process Data by Yourself</a>
 
 
 ****
@@ -50,11 +51,7 @@ We also provide the scripts that help you recreate the post-processed MSCOCO ben
 
 - (1) Download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_data).
 - (2) Download the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/blob/main/image_captioning/data/raw_images/README.md#1-download-mscoco-raw-images).
-
-
-To post-processing the MSCOCO benchmark, please  Then, 
-
-After downloading the raw data, run the following command:
+- (3) Run the following command:
 ```yaml
 python process_mscoco.py
 ```
@@ -90,6 +87,28 @@ The json files contain a list of dictory, where the data format of each dictiona
    "captions": A list of captions that the data instance contains.
 }
 ```
+
+
+<span id='postprocess_flickr30k'/>
+
+
+#### 2.2. Post-process Data by Yourself:
+
+We also provide the scripts that help you recreate the post-processed MSCOCO benchmark.
+
+- (1) Download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_data).
+- (2) Download the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_images#2-download-flickr30k-raw-images).
+
+
+To post-processing the Flickr30k benchmark, please  Then, 
+
+After downloading the raw data, run the following command:
+```yaml
+python process_mscoco.py
+```
+
+
+
 
 
 
