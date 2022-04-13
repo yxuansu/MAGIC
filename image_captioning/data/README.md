@@ -68,7 +68,7 @@ python process_mscoco.py
 
 #### 1.1. Download Post-processed Data:
 
-You can directly download our post-processed MSCOCO benchmark via this [[link]](https://drive.google.com/file/d/1i8-v-U3qlhK9uW_RzV3iV8IRJlKTpcBZ/view?usp=sharing). After downloading, you should unzip the downloaded **flickr30k.zip** file under the current directory.
+You can directly download our post-processed Flickr30k benchmark via this [[link]](https://drive.google.com/file/d/1i8-v-U3qlhK9uW_RzV3iV8IRJlKTpcBZ/view?usp=sharing). After downloading, you should unzip the downloaded **flickr30k.zip** file under the current directory.
 
 > **** The resulting post-processed Flickr30k benchmark looks like:
 
