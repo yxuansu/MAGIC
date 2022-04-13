@@ -8,6 +8,8 @@
 
 <span id='mscoco'/>
 
+#### 1. Download MSCOCO Raw Images:
+
 To prepare the MSCOCO raw images, please follow the instructions [[here](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_images/mscoco).
 
 > **** The resulting directory of MSCOCO should look like:
