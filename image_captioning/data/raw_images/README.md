@@ -26,7 +26,7 @@ To download the MSCOCO raw images, please follow the instructions [[here]](https
 
 #### 2. Download Flickr30k Raw Images
 
-You can download the Flickr30k raw images via the official website [[here]](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset). After downloading, unzip the downloaded file **archive.zip** under the current directory.
+You can download the Flickr30k raw images via the Kaggle website [[here]](https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset). After downloading, unzip the downloaded file **archive.zip** under the current directory.
 
 > **** The resulting directory of Flickr30k should look like:
 
