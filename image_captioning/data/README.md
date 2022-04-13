@@ -1,8 +1,8 @@
-## Benchmark Preparation
+# Benchmark Preparation
 
 ****
-### Catalogue:
-* <a href='#mscoco'>1. MSCOCO</a>
+## Catalogue:
+* <a href='#mscoco'>1. MSCOCO Benchmark</a>
     * <a href='#download_mscoco'>1.1. Download Post-processed Data</a>
     * <a href='#postprocess_mscoco'>1.2. Post-process Data by Yourself</a>
 
@@ -11,11 +11,11 @@
 
 <span id='mscoco'/>
 
-#### 1. MSCOCO:
+### 1. MSCOCO Benchmark:
 
 <span id='download_mscoco'/>
 
-##### 1.1. Download Post-processed Data:
+#### 1.1. Download Post-processed Data:
 
 You can directly download our post-processed MSCOCO benchmark via this [[link]](https://drive.google.com/file/d/1J922lIqzXpLfqfWd2-F3ZI3mW59lqlBu/view?usp=sharing). After downloading, you should unzip the downloaded **mscoco.zip** file under the current directory.
 
@@ -42,7 +42,7 @@ The json files contain a list of dictory, where the data format of each dictiona
 <span id='postprocess_mscoco'/>
 
 
-##### 1.2. Post-process Data by Yourself:
+#### 1.2. Post-process Data by Yourself:
 
 We also provide the scripts that help you recreate the post-processed MSCOCO benchmark.
 
