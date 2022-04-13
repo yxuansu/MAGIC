@@ -4,6 +4,7 @@
 ### Catalogue:
 * <a href='#mscoco'>1. MSCOCO</a>
     * <a href='#download_mscoco'>1.1. Download Post-processed Data</a>
+    * <a href='#postprocess_mscoco'>1.2. Post-process Data by Yourself</a>
 
 
 ****
@@ -38,7 +39,12 @@ The json files contain a list of dictory, where the data format of each dictiona
 }
 ```
 
+<span id='postprocess_mscoco'/>
 
+
+##### 1.2. Post-process Data by Yourself:
+
+We also provide the scripts that help you recreate the post-processed MSCOCO benchmark.
 
 
 To post-processing the MSCOCO benchmark, please first download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_data). Then, downloading the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_images).
