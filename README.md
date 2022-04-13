@@ -1,1 +1,1 @@
-# Language Models can See: Plugging Visual Control in Text Generation
+# Language Models can See: Plugging Visual Controls in Text Generation
