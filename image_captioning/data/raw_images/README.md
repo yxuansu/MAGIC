@@ -1,6 +1,14 @@
 ## Raw Images Downloading
 
-1. To prepare the MSCOCO benchmark, please refer to instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_images/mscoco).
+### Catalogue:
+* <a href='#mscoco'>1. Download MSCOCO Raw Images</a>
+* <a href='#flickr30k'>2. Download Flickr30k Raw Images</a>
+
+****
+
+<span id='mscoco'/>
+
+To prepare the MSCOCO raw images, please follow the instructions [[here](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data/raw_images/mscoco).
 
 > **** The resulting directory of MSCOCO should look like:
 
