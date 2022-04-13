@@ -2,7 +2,7 @@
 
 ****
 ### Catalogue:
-* <a href='#mscoco'>1. MSCOCO Benchmark</a>
+* <a href='#mscoco'>1. MSCOCO</a>
     * <a href='#download_mscoco'>1.1. Download Post-processed Data</a>
 
 
@@ -10,18 +10,13 @@
 
 <span id='mscoco'/>
 
-#### 1. MSCOCO Benchmark:
+#### 1. MSCOCO:
 
 <span id='download_mscoco'/>
 
 ##### 1.1. Download Post-processed Data:
 
-To post-processing the MSCOCO benchmark, please first download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_data). Then, downloading the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_images).
-
-After downloading the raw data, run the following command:
-```yaml
-python process_mscoco.py
-```
+You can directly download our post-processed MSCOCO benchmark via this [[link]](https://drive.google.com/file/d/1J922lIqzXpLfqfWd2-F3ZI3mW59lqlBu/view?usp=sharing). After downloading, you should unzip the downloaded **mscoco.zip** file under the current directory.
 
 > **** The resulting post-processed MSCOCO benchmark looks like:
 
@@ -46,4 +41,16 @@ The json files contain a list of dictory, where the data format of each dictiona
 
 
 
-We also share our post-processed MSCOCO benchmark. You can directly download it via this [[link]](https://drive.google.com/file/d/1J922lIqzXpLfqfWd2-F3ZI3mW59lqlBu/view?usp=sharing). After downloading, you should unzip the downloaded **mscoco.zip** file under the current directory.
+To post-processing the MSCOCO benchmark, please first download the data split following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_data). Then, downloading the raw images following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/data/raw_images).
+
+After downloading the raw data, run the following command:
+```yaml
+python process_mscoco.py
+```
+
+
+
+
+
+
+
