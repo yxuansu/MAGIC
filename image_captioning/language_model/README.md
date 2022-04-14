@@ -104,7 +104,6 @@ input_ids = torch.LongTensor(input_ids).view(1,-1)
    use contrastive search to generate the result.
    note that, contrastive search is a deterministic decoding method, thus the generated text is always the same.
 '''
-
 k, alpha, decoding_len = 45, 0.1, 16
 output_text = generation_model.fast_contrastive_search(input_ids, k, alpha, decoding_len)
 print (output_text)
@@ -116,10 +115,33 @@ print (output_text)
 <span id='top_k_sampling'/>
 
 ##### 3.2. Top-k Sampling :
+```python
+'''
+   use top-k sampling to generate the result.
+'''
+top_k, decoding_len = 40, 16
+output_text = generation_model.top_k_sampling(input_ids, top_k, decoding_len)
+print (output_text)
+'''
+   some very different types of vases with flowers together
+'''
+```
 
 <span id='nucleus_sampling'/>
 
 ##### 3.3. Nucleus Sampling :
+```python
+'''
+   use nucleus sampling to generate the result.
+'''
+nucleus_p, decoding_len = 0.95, 16
+output_text = generation_model.nucleus_sampling(input_ids, nucleus_p, decoding_len)
+print (output_text)
+'''
+   Two young girls enjoying a hot dog hot dog bun.
+'''
+```
+
 
 
 
