@@ -73,6 +73,28 @@ chmod +x ./train_flickr30k.sh
 ./train_flickr30k.sh
 ```
 
+****
+<span id='unsupervised_baselines'/>
+
+#### 3. Unsupervised Baselines:
+
+Here, we illustrate how to use the language model to perform unsupervised baselines as described in our paper. Note that, all these methods are **unsupervised** as the language model is a text-only model and does not take image as input. 
+
+<span id='contrastive_search'/>
+
+##### 3.1. Contrastive Search :
+
+<span id='top_k_sampling'/>
+
+##### 3.2. Top-k Sampling :
+
+<span id='nucleus_sampling'/>
+
+##### 3.3. Nucleus Sampling :
+
+
+
+
 
 
 
