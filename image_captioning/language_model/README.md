@@ -21,7 +21,7 @@
 
 #### 1. MSCOCO Benchmark:
 
-We first describe how to train a language model on the text corpus of MSCOCO benchmark.
+We first describe how to perform unsupervised domain adaptation of language model on the text corpus of MSCOCO benchmark.
 
 <span id='mscoco_data_preparation'/>
 
