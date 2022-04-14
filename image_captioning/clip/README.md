@@ -23,6 +23,13 @@ First, we demonstrate how to build text index for MSCOCO.
 <span id='download_mscoco_index'/>
 
 #### 1.1.1. Download Our Post-processed Index:
-We share our built index for MSCOCO via this [[link]](https://drive.google.com/file/d/1Dx_RPeAmydS6ZYuiJ-dLlK9-DjDZkxAh/view?usp=sharing). 
+We share our built index for MSCOCO via this [[link]](https://drive.google.com/file/d/1Dx_RPeAmydS6ZYuiJ-dLlK9-DjDZkxAh/view?usp=sharing). After downloading, unzip the downloaded file **mscoco_index.zip** under the current directory.
+
+> **** The resulting directory looks like:
+
+    .
+    ├── ./mscoco_index/                    
+        ├── index_matrix.txt # The file that stores the representations of captions from the training set of MSCOCO. Each row is a vector that corresponds to a specific caption from the training set.
+        └── text_mapping.json # The file that stores the mappings between the representation and the corresponding caption.
 
 
