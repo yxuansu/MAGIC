@@ -5,7 +5,7 @@ import nltk
 from nltk.chunk import tree2conlltags
 
 mode = "val"
-with open(f"../datasets/flickr30k/flickr30k/flickr30k_{mode}.json", "r") as fin:
+with open(f"../datasets/flickr30k/flickr30k_{mode}.json", "r") as fin:
     data = json.load(fin)
 print("Num of Images:", len(data))
 
