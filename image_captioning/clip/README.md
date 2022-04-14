@@ -32,4 +32,8 @@ We share our built index for MSCOCO via this [[link]](https://drive.google.com/f
         ├── index_matrix.txt # The file that stores the representations of captions from the training set of MSCOCO. Each row is a vector that corresponds to a specific caption from the training set.
         └── text_mapping.json # The file that stores the mappings between the representation and the corresponding caption.
 
+<span id='process_mscoco_index'/>
 
+#### 1.1.2. Construct the Index by Yourself:
+
+You can also rebuild the index by yourself. First, you should make sure you have downloaded the MSCOCO data following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data#1-mscoco-benchmark). Then, you can run the following command to build the index.
