@@ -7,7 +7,11 @@
 * <a href='#flickr30k'>2. Flickr30k Benchmark</a>
     * <a href='#flickr30k_data_preparation'>2.1. Flickr30k Data Preparation</a>
     * <a href='#flickr30k_training'>2.2. Unsupervised Domain Adaptation on Flickr30k</a>
-    
+* <a href='#unsupervised_baselines'>3. Unsupervised Baselines</a>
+    * <a href='#contrastive_search'>3.1. Contrastive Search</a>
+    * <a href='#top_k_sampling'>3.2. Top-k Sampling</a>
+    * <a href='#nucleus_sampling'>3.3. Nucleus Sampling</a> 
+
 ****
 <span id='mscoco'/>
 
