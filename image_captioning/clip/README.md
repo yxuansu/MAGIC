@@ -109,10 +109,13 @@ Here, X is in ['mscoco', 'flickr30k'] which corresponds for the MSCOCO and Flick
 
 The arguments are as follows:
 * `--clip_name`: The configuration of the pre-trained CLIP model from huggingface.
-* `--text_file_path`: Where the training text corpus stores.
-* `--save_index_prefix`: In which directory you would like to store your index files.
-* `--save_index_name`: The saved name of the caption representations.
-* `--save_mapping_dict_name`: The saved name of the mapping dictionary between representations and captions.
-* `--batch_siz`: The inference batch size.
+* `--test_image_prefix_path`: Where the test set images stores.
+* `--test_path`: Where the reference test captions file stores.
+* `--index_matrix_path`: The path of the representation index file.
+* `--mapping_dict_path`: The path of the mapping dictionary between representations and captions.
+* `--save_path_prefix`: Where to save the inferenced result.
+* `--save_name`: The saved name of the inferenced result.
+
+**[Note]** As we are conducting in domain CLIP retrieval, the test images and the caption index should come from the same benchmark.
 
 
