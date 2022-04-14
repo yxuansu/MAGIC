@@ -7,6 +7,7 @@ This folder illustrates how to use CLIP to build text index and to conduct cross
     * <a href='#mscoco'>1.1. Build Text Index for MSCOCO</a>
         * <a href='#download_mscoco_index'>1.1.1. Download Our Built Index</a>
         * <a href='#process_mscoco_index'>1.1.2. Construct the Index by Yourself</a>
+    * <a href='#flickr30k'>1.2. Build Text Index for Flickr30k</a>
 
 ****
 
@@ -48,4 +49,12 @@ The arguments are as follows:
 * `--save_index_name`: The saved name of the caption representations.
 * `--save_mapping_dict_name`: The saved name of the mapping dictionary between representations and captions.
 * `--batch_siz`: The inference batch size.
+
+
+<span id='flickr30k'/>
+
+#### 1.2. Build Text Index for Flickr30k:
+Next, we demonstrate how to build text index for Flickr30k.
+
+https://drive.google.com/file/d/1hS58_ir5pdZZPckApCtlz2RyasCQbrPf/view?usp=sharing
 
