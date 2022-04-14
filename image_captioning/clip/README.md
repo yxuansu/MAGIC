@@ -37,3 +37,15 @@ We share our built index for MSCOCO via this [[link]](https://drive.google.com/f
 #### 1.1.2. Construct the Index by Yourself:
 
 You can also rebuild the index by yourself. First, you should make sure you have downloaded the MSCOCO data following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data#1-mscoco-benchmark). Then, you can run the following command to build the index.
+```yaml
+chmod +x ./build_mscoco_index.sh
+./build_mscoco_index.sh
+```
+The arguments are as follows:
+* `--clip_name`: The configuration of the pre-trained CLIP model from huggingface.
+* `--text_file_path`: Where the training text corpus stores.
+* `--save_index_prefix`: In which directory you would like to store your index files.
+* `--save_index_name`: The saved name of the caption representations.
+* `--save_mapping_dict_name`: The saved name of the mapping dictionary between representations and captions.
+* `--batch_siz`: The inference batch size.
+
