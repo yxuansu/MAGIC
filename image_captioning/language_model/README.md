@@ -90,7 +90,7 @@ language_model_name = r'cambridgeltl/magic_mscoco'
 generation_model = SimCTG(language_model_name, sos_token, pad_token)
 generation_model.eval()
 
-# Then, prepare the input ids. Note that, the text is always generated from the same start of sentence token.
+# then, prepare the input ids. Note that, the text is always generated from the same start of sentence token.
 tokens = generation_model.tokenizer.tokenize(sos_token)
 input_ids = generation_model.tokenizer.convert_tokens_to_ids(tokens)
 input_ids = torch.LongTensor(input_ids).view(1,-1)
