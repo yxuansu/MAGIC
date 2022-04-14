@@ -104,13 +104,18 @@ input_ids = torch.LongTensor(input_ids).view(1,-1)
    use contrastive search to generate the result.
    note that, contrastive search is a deterministic decoding method, thus the generated text is always the same.
 '''
-k, alpha, decoding_len = 45, 0.1, 16
-output_text = generation_model.fast_contrastive_search(input_ids, k, alpha, decoding_len)
+beam_width, alpha, decoding_len = 45, 0.1, 16
+output_text = generation_model.fast_contrastive_search(input_ids, beam_width, alpha, decoding_len)
 print (output_text)
 '''
    A man is riding a skateboard down a street.
 '''
 ```
+The arguments are as follows:
+* `--input_ids`: The id of the start of sentence token.
+* `--beam_width`: k in the contrastive search.
+* `--alpha`: alpha in the contrastive search.
+* `--decoding_len`: Number of tokens to generate.
 
 <span id='top_k_sampling'/>
 
@@ -126,6 +131,10 @@ print (output_text)
    some very different types of vases with flowers together
 '''
 ```
+The arguments are as follows:
+* `--input_ids`: The id of the start of sentence token.
+* `--k`: The k in top-k sampling.
+* `--decoding_len`: Number of tokens to generate.
 
 <span id='nucleus_sampling'/>
 
@@ -141,6 +150,10 @@ print (output_text)
    Two young girls enjoying a hot dog hot dog bun.
 '''
 ```
+The arguments are as follows:
+* `--input_ids`: The id of the start of sentence token.
+* `--nucleus_p`: The probability in nucleus sampling.
+* `--decoding_len`: Number of tokens to generate.
 
 
 
