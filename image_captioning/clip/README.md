@@ -12,7 +12,7 @@ This folder illustrates how to use CLIP to build text index and to conduct cross
         * <a href='#process_flickr30k_index'>1.2.2. Construct the Index by Yourself</a>
 * <a href='#baseline'>2. CLIP Retrieval Baseline</a>
     * <a href='#in_domain_baseline'>2.1. In Domain CLIP Retrieval</a>
-
+    * <a href='#cross_domain_baseline'>2.2. Cross Domain CLIP Retrieval</a>
 
 ****
 
@@ -119,3 +119,23 @@ The arguments are as follows:
 **[Note]** As we are conducting in domain CLIP retrieval, the test images and the caption index should come from the same benchmark.
 
 
+<span id='cross_domain_baseline'/>
+
+#### 2.2. Cross Domain CLIP Retrieval:
+To retrieve the captions from the cross domain training set, you should run the following command:
+```yaml
+chmod +x ./source_X_target_Y_clip_retrieval.sh
+./source_X_target_Y_clip_retrieval.sh
+```
+Here, X is the source domain from ['mscoco', 'flickr30k'] and Y is the target domain from ['flickr30k', 'mscoco'].
+
+The arguments are as follows:
+* `--clip_name`: The configuration of the pre-trained CLIP model from huggingface.
+* `--test_image_prefix_path`: Where the test set images stores.
+* `--test_path`: Where the reference test captions file stores.
+* `--index_matrix_path`: The path of the representation index file.
+* `--mapping_dict_path`: The path of the mapping dictionary between representations and captions.
+* `--save_path_prefix`: Where to save the inferenced result.
+* `--save_name`: The saved name of the inferenced result.
+
+**[Note]** As we are conducting cross domain CLIP retrieval, the test images and the caption index should come from **different** benchmarks.
