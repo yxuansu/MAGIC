@@ -9,6 +9,7 @@ This folder illustrates how to use CLIP to build text index and to conduct cross
         * <a href='#process_mscoco_index'>1.1.2. Construct the Index by Yourself</a>
     * <a href='#flickr30k'>1.2. Build Text Index for Flickr30k</a>
         * <a href='#download_flickr30k_index'>1.2.1. Download Our Built Index</a>
+        * <a href='#process_flickr30k_index'>1.2.2. Construct the Index by Yourself</a>
 
 ****
 
@@ -69,5 +70,21 @@ We share our built index for Flickr30k via this [[link]](https://drive.google.co
         ├── index_matrix.txt # The file that stores the representations of captions from the training set of Flickr30k. Each row is a vector that corresponds to a specific caption from the training set.
         └── text_mapping.json # The file that stores the mappings between the representation and the corresponding caption.
 
+<span id='process_flickr30k_index'/>
+
+#### 1.2.2. Construct the Index by Yourself:
+
+You can also rebuild the index by yourself. First, you should make sure you have downloaded the Flickr30k data following instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data#2-flickr30k-benchmark). Then, you can run the following command to build the index.
+```yaml
+chmod +x ./build_flickr30k_index.sh
+./build_flickr30k_index.sh
+```
+The arguments are as follows:
+* `--clip_name`: The configuration of the pre-trained CLIP model from huggingface.
+* `--text_file_path`: Where the training text corpus stores.
+* `--save_index_prefix`: In which directory you would like to store your index files.
+* `--save_index_name`: The saved name of the caption representations.
+* `--save_mapping_dict_name`: The saved name of the mapping dictionary between representations and captions.
+* `--batch_siz`: The inference batch size.
 
 
