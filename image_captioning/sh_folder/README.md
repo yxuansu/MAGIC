@@ -1,5 +1,7 @@
 ## Details of How to Implement the Inference Code
 
+In this folder, we illustrate how to conduct inference with different methods.
+
 ****
 ### Catalogue:
 * <a href='#magic_search'>1. Magic Search</a>
