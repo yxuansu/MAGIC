@@ -17,7 +17,7 @@ chmod +x ./evaluation.sh
 
 After running the command, you should get the following results.
 
-<img src="https://github.com/yxuansu/MAGIC/blob/main/evaluate/evaluation_result.png" width="400" height="450">
+<img src="https://github.com/yxuansu/MAGIC/blob/main/image_captioning/evaluation/evaluation_result.png" width="400" height="450">
 
 
 
