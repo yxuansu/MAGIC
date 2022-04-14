@@ -123,6 +123,7 @@ The arguments are as follows:
 ```python
 '''
    use top-k sampling to generate the result.
+   note that, the this method is a stochastic method, thus the generated text is always different.
 '''
 top_k, decoding_len = 40, 16
 output_text = generation_model.top_k_sampling(input_ids, top_k, decoding_len)
@@ -142,6 +143,7 @@ The arguments are as follows:
 ```python
 '''
    use nucleus sampling to generate the result.
+   note that, the this method is a stochastic method, thus the generated text is always different.
 '''
 nucleus_p, decoding_len = 0.95, 16
 output_text = generation_model.nucleus_sampling(input_ids, nucleus_p, decoding_len)
