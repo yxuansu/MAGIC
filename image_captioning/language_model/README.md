@@ -5,8 +5,8 @@
     * <a href='#mscoco_data_preparation'>1.1. MSCOCO Data Preparation</a>
     * <a href='#mscoco_training'>1.2. Unsupervised Domain Adaptation on MSCOCO</a>
 * <a href='#flickr30k'>2. Flickr30k Benchmark</a>
-    * <a href='#flickr30k_data_preparation'>1.1. Flickr30k Data Preparation</a>
-    * <a href='#flickr30k_training'>1.2. Unsupervised Domain Adaptation on Flickr30k</a>
+    * <a href='#flickr30k_data_preparation'>2.1. Flickr30k Data Preparation</a>
+    * <a href='#flickr30k_training'>2.2. Unsupervised Domain Adaptation on Flickr30k</a>
     
 ****
 <span id='mscoco'/>
