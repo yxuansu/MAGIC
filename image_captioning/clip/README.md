@@ -8,6 +8,7 @@ This folder illustrates how to use CLIP to build text index and to conduct cross
         * <a href='#download_mscoco_index'>1.1.1. Download Our Built Index</a>
         * <a href='#process_mscoco_index'>1.1.2. Construct the Index by Yourself</a>
     * <a href='#flickr30k'>1.2. Build Text Index for Flickr30k</a>
+        * <a href='#download_flickr30k_index'>1.2.1. Download Our Built Index</a>
 
 ****
 
@@ -56,5 +57,17 @@ The arguments are as follows:
 #### 1.2. Build Text Index for Flickr30k:
 Next, we demonstrate how to build text index for Flickr30k.
 
-https://drive.google.com/file/d/1hS58_ir5pdZZPckApCtlz2RyasCQbrPf/view?usp=sharing
+<span id='download_flickr30k_index'/>
+
+#### 1.2.1. Download Our Post-processed Index:
+We share our built index for Flickr30k via this [[link]](https://drive.google.com/file/d/1hS58_ir5pdZZPckApCtlz2RyasCQbrPf/view?usp=sharing). After downloading, unzip the downloaded file **flickr30k_index.zip** under the current directory.
+
+> **** The resulting directory looks like:
+
+    .
+    ├── ./flickr30k_index/                    
+        ├── index_matrix.txt # The file that stores the representations of captions from the training set of Flickr30k. Each row is a vector that corresponds to a specific caption from the training set.
+        └── text_mapping.json # The file that stores the mappings between the representation and the corresponding caption.
+
+
 
