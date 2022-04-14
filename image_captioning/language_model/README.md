@@ -80,6 +80,16 @@ chmod +x ./train_flickr30k.sh
 
 Here, we illustrate how to use the language model to perform unsupervised baselines as described in our paper. Note that, all these methods are **unsupervised** as the language model is a text-only model and does not take image as input. 
 
+```python
+# first load the language model
+import torch
+from simctg import SimCTG
+sos_token, pad_token = r'<-start_of_text->', r'<-pad->'
+language_model_name = r'cambridgeltl/magic_mscoco'
+generation_model = SimCTG(language_model_name, sos_token, pad_token)
+generation_model.eval()
+```
+
 <span id='contrastive_search'/>
 
 ##### 3.1. Contrastive Search :
