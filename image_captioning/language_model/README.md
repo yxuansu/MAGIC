@@ -3,6 +3,7 @@
 ### Catalogue:
 * <a href='#mscoco'>1. MSCOCO Benchmark</a>
     * <a href='#mscoco_data_preparation'>1.1. MSCOCO Data Preparation</a>
+    * <a href='#mscoco_training'>1.2. Train Language Model on MSCOCO</a>
 * <a href='#data_preparation'>1. Data Preparation</a>
 * <a href='#train_simctg'>2. Train Language Model</a>
 * <a href='#inference'>3. Inference with SimCTG</a>
@@ -25,6 +26,17 @@ We first describe how to train a language model on the text corpus of MSCOCO ben
 <span id='mscoco_data_preparation'/>
 
 ##### 1.1. MSCOCO Data Preparation:
+
+To prepare the MSCOCO benchmark, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data#1-mscoco-benchmark).
+
+<span id='mscoco_training'/>
+
+##### 1.2. Train Language Model on MSCOCO:
+After preparing the MSCOCO data, run the following command to train the language model.
+```yaml
+chmod +x ./train_mscoco.sh
+./train_mscoco.sh
+```
 
 
 ****
