@@ -5,7 +5,7 @@ This folder illustrates how to use CLIP to build text index and to conduct cross
 ## Catalogue:
 * <a href='#index'>1. Build Text Index</a>
     * <a href='#mscoco'>1.1. Build Text Index for MSCOCO</a>
-        * <a href='#download_mscoco_index'>1.1.1. Download Our Post-processed Index</a>
+        * <a href='#download_mscoco_index'>1.1.1. Download Our Built Index</a>
         * <a href='#process_mscoco_index'>1.1.2. Construct the Index by Yourself</a>
 
 ****
@@ -19,5 +19,10 @@ We show how to build the text index, from which the caption is retrieved from, u
 
 #### 1.1. Build Text Index for MSCOCO:
 First, we demonstrate how to build text index for MSCOCO.
+
+<span id='download_mscoco_index'/>
+
+#### 1.1.1. Download Our Post-processed Index:
+We share our built index for MSCOCO via this [[link]](https://drive.google.com/file/d/1Dx_RPeAmydS6ZYuiJ-dLlK9-DjDZkxAh/view?usp=sharing). 
 
 
