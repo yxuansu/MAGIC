@@ -1,8 +1,10 @@
-## This repo describes the experimental details on Wikitext-103 benchmark.
+## Training of Language Model
 ****
 ### Catalogue:
+* <a href='#mscoco'>1. MSCOCO Benchmark</a>
+    * <a href='#mscoco_data_preparation'>1.1. MSCOCO Data Preparation</a>
 * <a href='#data_preparation'>1. Data Preparation</a>
-* <a href='#train_simctg'>2. Train SimCTG</a>
+* <a href='#train_simctg'>2. Train Language Model</a>
 * <a href='#inference'>3. Inference with SimCTG</a>
 * <a href='#generate_results'>4. Generate Result with Different Decoding Methods</a>
     * <a href='#contrastive_search'>4.1. Contrastive Search</a>
@@ -11,6 +13,18 @@
     * <a href='#greedy_search'>4.4. Greedy Search</a>
     * <a href='#beam_search'>4.5. Beam Search</a>
 * <a href='#visualize_token_similarity_matrix'>5. Visualize the Token Similarity Matrix</a>
+
+
+****
+<span id='mscoco'/>
+
+#### 1. MSCOCO Benchmark:
+
+We first describe how to train a language model on the text corpus of MSCOCO benchmark.
+
+<span id='mscoco_data_preparation'/>
+
+##### 1.1. MSCOCO Data Preparation:
 
 
 ****
