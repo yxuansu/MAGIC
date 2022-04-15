@@ -24,4 +24,4 @@ After running the command, you should get the following results.
 
 To evaluate different files, you should change the path of the --result_file_path argument in the script.
 
-**[Note]** We have rigorously tested the evaluation scripts in Ubuntu 16.04 system. However, on MacOS systems, you might encounter JAVA errors.
+**[Note]** We have rigorously tested the evaluation scripts in Ubuntu 16.04 system. However, you might encounter JAVA errors on MacOS systems
