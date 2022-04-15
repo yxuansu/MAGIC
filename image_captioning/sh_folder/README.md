@@ -44,3 +44,10 @@ Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
 <span id='cross_domain_magic_search'/>
 
 #### 1.2. Cross Domain Experiment:
+
+To perform cross domian experiment with magic search, please run the following command:
+```yaml
+chmod +x ./source_X_target_Y_magic.sh
+./source_X_target_Y_magic.sh
+```
+Here, X is the source domain from ['mscoco', 'flickr30k'] and Y is the target domain from ['flickr30k', 'mscoco']. 
