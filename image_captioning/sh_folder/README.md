@@ -50,3 +50,20 @@ chmod +x ./source_X_target_Y_magic.sh
 ./source_X_target_Y_magic.sh
 ```
 Here, X is the source domain from ['mscoco', 'flickr30k'] and Y is the target domain from ['flickr30k', 'mscoco']. 
+
+The arguments are as follows:
+* `--language_model_code_path`: Where the code of language model locates. 
+* `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
+* `--clip_path`: Where the code of CLIP locates.
+* `--clip_name`: The CLIP model name on huggingface. 
+* `--test_image_prefix_path`: The directory that stores the test set images. 
+* `--test_path`: The file that stores the reference captions. 
+* `--decoding_len`: The number of tokens to generate. 
+* `--k`: The k in magic search. 
+* `--alpha`: The alpha in magic search. 
+* `--beta`: The beta in magic search. 
+* `--save_path_prefix`: Where to save the inferenced result. 
+* `--save_name`: The saved name of the inferenced result. 
+
+**[Note]** For cross domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from **different** domains.
+
