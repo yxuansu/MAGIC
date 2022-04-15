@@ -12,6 +12,7 @@ In this folder, we illustrate how to conduct inference with different methods.
     * <a href='#cross_domain_contrastive_search'>2.2. Cross Domain Experiment</a>
 * <a href='#topk_sampling'>3. Top-k Sampling</a>
     * <a href='#in_domain_topk_sampling'>3.1. In Domain Experiment</a>
+    * <a href='#cross_domain_topk_sampling'>3.2. Cross Domain Experiment</a>
 * <a href='#nucleus_sampling'>4. Nucleus Sampling</a>
     * <a href='#in_domain_nucleus_sampling'>4.1. In Domain Experiment</a>
 
@@ -133,6 +134,20 @@ Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
 
 **[Note]** For in domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from the same domain.
 
+<span id='cross_domain_topk_sampling'/>
+
+#### 3.2. Cross Domain Experiment:
+
+To perform cross domian experiment with top-k sampling, please run the following command:
+```yaml
+chmod +x ./source_X_target_Y_topk_baseline.sh
+./source_X_target_Y_topk_baseline.sh
+```
+Here, X is the source domain from ['mscoco', 'flickr30k'] and Y is the target domain from ['flickr30k', 'mscoco']. 
+
+The arguments are the same as in section 3.1.
+
+**[Note]** For cross domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from **different** domains.
 
 ****
 
