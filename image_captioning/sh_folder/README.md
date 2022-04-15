@@ -1,4 +1,4 @@
-## Details of How to Implement the Inference Code
+## Details of How to Run the Inference Code
 
 In this folder, we illustrate how to conduct inference with different methods.
 
