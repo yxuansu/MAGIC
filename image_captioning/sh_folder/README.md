@@ -24,7 +24,6 @@ To perform in domain experiment with magic search, please run the following comm
 chmod +x ./X_magic.sh
 ./X_magic.sh
 ```
-
 Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
 * `--language_model_code_path`: Where the code of language model locates. 
 * `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
