@@ -134,4 +134,31 @@ Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
 **[Note]** For in domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from the same domain.
 
 
+****
+
+<span id='nucleus_sampling'/>
+
+### 4. Nucleus Sampling:
+
+<span id='in_domain_nucleus_sampling'/>
+
+#### 4.1. In Domain Experiment:
+
+To perform in domain experiment with nucleus sampling, please run the following command:
+```yaml
+chmod +x ./X_nucleus_baseline.sh
+./X_nucleus_baseline.sh
+```
+Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
+* `--language_model_code_path`: Where the code of language model locates. 
+* `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
+* `--test_path`: The file that stores the reference captions. 
+* `--decoding_method`: nucleus
+* `--decoding_len`: The number of tokens to generate. 
+* `--nucleus_p`: The p in nucleus sampling. 
+* `--save_path_prefix`: Where to save the inferenced result. 
+* `--save_name`: The saved name of the inferenced result. 
+
+**[Note]** For in domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from the same domain.
+
 
