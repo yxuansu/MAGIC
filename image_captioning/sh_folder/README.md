@@ -10,6 +10,10 @@ In this folder, we illustrate how to conduct inference with different methods.
 * <a href='#contrastive_search'>2. Contrastive Search</a>
     * <a href='#in_domain_contrastive_search'>2.1. In Domain Experiment</a>
     * <a href='#cross_domain_contrastive_search'>2.2. Cross Domain Experiment</a>
+* <a href='#topk_sampling'>3. Top-k Sampling</a>
+    * <a href='#in_domain_topk_sampling'>3.1. In Domain Experiment</a>
+* <a href='#nucleus_sampling'>4. Nucleus Sampling</a>
+    * <a href='#in_domain_nucleus_sampling'>4.1. In Domain Experiment</a>
 
 ****
 
@@ -100,5 +104,34 @@ Here, X is the source domain from ['mscoco', 'flickr30k'] and Y is the target do
 The arguments are the same as in section 2.1.
 
 **[Note]** For cross domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from **different** domains.
+
+
+****
+
+<span id='topk_sampling'/>
+
+### 3. Top-k Sampling:
+
+<span id='in_domain_topk_sampling'/>
+
+#### 3.1. In Domain Experiment:
+
+To perform in domain experiment with top-k sampling, please run the following command:
+```yaml
+chmod +x ./X_topk_baseline.sh
+./X_topk_baseline.sh
+```
+Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
+* `--language_model_code_path`: Where the code of language model locates. 
+* `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
+* `--test_path`: The file that stores the reference captions. 
+* `--decoding_method`: topk  
+* `--decoding_len`: The number of tokens to generate. 
+* `--top_k`: The k in top-k sampling. 
+* `--save_path_prefix`: Where to save the inferenced result. 
+* `--save_name`: The saved name of the inferenced result. 
+
+**[Note]** For in domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from the same domain.
+
 
 
