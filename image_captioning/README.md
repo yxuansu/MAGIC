@@ -12,3 +12,11 @@ In this directory, we illustrate the details of our experiments on the task of z
     * <a href='#contrastive_search'>4.3. Contrastive Search</a>
     * <a href='#clipre'>4.4. CLIPRe</a>
     * <a href='#zerocap'>4.5. ZeroCap</a>
+
+
+****
+
+<span id='data_preparation'/>
+
+### 1. Data Preparation:
+To prepare the data for MSCOCO and Flickr30k benchmarks, please follow instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data).
