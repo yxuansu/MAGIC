@@ -61,7 +61,7 @@ To perform unsupervised domain adaptation on Flickr30k domain, please follow the
 <span id='huggingface_models'/>
 
 #### 2.3. Huggingface Models:
-We provide our models adapted on MSCOCO and Flickr30k for an easy usage and the reproductivity of our results.
+We provide our language models adapted on MSCOCO and Flickr30k for an easy usage and the reproductivity of our results.
 
 |Model Name|Training Corpus|Model Size|Model Address|
 |:-------------:|:-------------:|:-------------:|:-------------:|
