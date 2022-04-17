@@ -14,6 +14,8 @@ In this directory, we illustrate the details of our experiments on the task of z
         ├── ./zerocap/ # Contains details of the ZeroCap baseline
         └── ./inference_result/ # Contains the inferenced results of all evaluated methods
 
+**[Note]** To ensure the reproductivity of our work, [in this folder](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/inference_result), we provide the inferenced results of all evaluated methods.
+
 ****
 ### Catalogue:
 * <a href='#data_preparation'>1. Data Preparation</a>
@@ -106,7 +108,7 @@ To perform inference with the CLIPRe baseline, please refer to details [[here]](
 #### 4.5. ZeroCap:
 To perform inference with the ZeroCap baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/zerocap).
 
-**[Note]** To ensure the reproductivity of our work, [in this folder](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/inference_result), we provide the inferenced results of all evaluated methods.
+
 
 
 
