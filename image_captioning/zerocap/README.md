@@ -47,7 +47,7 @@ chmod +x ./flickr30k_zerocap.sh
 <span id='flickr30k_to_mscoco'/>
 
 #### 4. Cross Domain Image Captioning on MSCOCO:
-To perform image captioning on MSCOCO with language model from Flickr30k domain, please run the following command:
+To perform image captioning on MSCOCO with the language model from Flickr30k domain, please run the following command:
 ```yaml
 chmod +x ./flickr30k_to_mscoco_zerocap.sh
 ./flickr30k_to_mscoco_zerocap.sh
@@ -58,7 +58,7 @@ chmod +x ./flickr30k_to_mscoco_zerocap.sh
 <span id='mscoco_to_flickr30k'/>
 
 #### 5. Cross Domain Image Captioning on Flickr30k:
-To perform image captioning on MSCOCO with language model from Flickr30k domain, please run the following command:
+To perform image captioning on Flickr30k with the language model from MSCOCO domain, please run the following command:
 ```yaml
 chmod +x ./mscoco_to_flickr30k_zerocap.sh
 ./mscoco_to_flickr30k_zerocap.sh
