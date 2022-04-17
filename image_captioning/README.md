@@ -1,6 +1,20 @@
 ## Zero-Shot Image Captioning
 In this directory, we illustrate the details of our experiments on the task of zero-shot image captioning. 
 
+> ****  The structure of the directory looks like:
+
+    .
+    ├── ./data/  # Contains details of how to prepare the benchmark data
+    ├── ./language_model/ # Contains details of the unsupervised domain adaptation of language and different generation methods
+    ├── ./clip/  # Contains details of the CLIP model and how to perform the CLIPRe baseline
+
+    ├──
+    ├──
+    ├──
+    └──
+
+
+
 ****
 ### Catalogue:
 * <a href='#data_preparation'>1. Data Preparation</a>
@@ -15,6 +29,7 @@ In this directory, we illustrate the details of our experiments on the task of z
     * <a href='#contrastive_search'>4.3. Contrastive Search</a>
     * <a href='#clipre'>4.4. CLIPRe</a>
     * <a href='#zerocap'>4.5. ZeroCap</a>
+* <a href='#evaluation'>5. Perform Evaluation</a> 
 
 
 ****
