@@ -86,32 +86,31 @@ To perform inference with our magic approach, please refer to details [[here]](h
 #### 4.1. Top-k Sampling:
 To perform inference with the top-k sampling baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/sh_folder#3-top-k-sampling) and [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#32-top-k-sampling-).
 
+<span id='nucleues_sampling'/>
 
-* <a href='#'></a>
-* <a href='#'></a>
-    * <a href='#'>4.1. </a>
-    * <a href='#nucleues_sampling'>4.2. Nucleus Sampling</a>
-    * <a href='#contrastive_search'>4.3. Contrastive Search</a>
-    * <a href='#clipre'>4.4. CLIPRe</a>
-    * <a href='#zerocap'>4.5. ZeroCap</a>
+#### 4.2. Nucleus Sampling:
+To perform inference with the nucleus sampling baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/sh_folder#4-nucleus-sampling) and [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#33-nucleus-sampling-).
+
+<span id='contrastive_search'/>
+
+#### 4.3. Contrastive Search:
+To perform inference with the contrastive search baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/sh_folder#2-contrastive-search) and [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#31-contrastive-search-).
+
+<span id='clipre'/>
+
+#### 4.4. CLIPRe:
+To perform inference with the CLIPRe baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/clip).
+
+<span id='zerocap'/>
+
+#### 4.5. ZeroCap:
+To perform inference with the ZeroCap baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/zerocap).
+
+**[Note]** To ensure the reproductivity of our work, we provide the inferenced results of all evaluated methods [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/inference_result).
 
 
 
-****
 
-<span id='inference_with_baseline'/>
-
-### 4. Perform Inference with Baseline Methods:
-
-<span id='mscoco_adaptation'/>
-
-#### 2.1. MSCOCO:
-
-<span id='mscoco_adaptation'/>
-
-#### 2.1. MSCOCO:
-
-* <a href='#'></a>
 
 
 
