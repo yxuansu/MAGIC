@@ -20,3 +20,11 @@ In this directory, we illustrate the details of our experiments on the task of z
 
 ### 1. Data Preparation:
 To prepare the data for MSCOCO and Flickr30k benchmarks, please follow instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/data).
+
+
+****
+
+<span id='unsupervised_domain_adaptation'/>
+
+### 2. Unsupervised Domain Adaptation:
+To perform unsupervised domain adaptation on MSCOCO domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#12unsupervised-domain-adaptation-on-mscoco). To perform unsupervised domain adaptation on Flickr30k domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#22-unsupervised-domain-adaptation-on-flickr30k). 
