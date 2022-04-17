@@ -50,3 +50,14 @@ This directory contains the results of all evaluated methods for the image capti
         ├── nucleus_result_run_3.json # third run of nucleus sampling 
         ├── source_mscoco_target_flickr30k_clip_retrieval.json # CLIPRe 
         └──  # ZeroCap 
+
+The generated file is a list of dictionary, where the data format of each dictionary is:
+```yaml
+{  
+   "split": Indicating which split (train, val, or test) the data instance belongs to.
+   "image_name": The name of the corresponding image.
+   "file_path": Where to find the corresponding image from the raw MSCOCO files.
+   "captions": A list of captions that the data instance contains.
+   "prediction": The predicted result of the model.
+}
+```
