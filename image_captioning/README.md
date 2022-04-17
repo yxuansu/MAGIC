@@ -4,14 +4,15 @@ In this directory, we illustrate the details of our experiments on the task of z
 > ****  The structure of the directory looks like:
 
     .
-    ├── ./data/  # Contains details of how to prepare the benchmark data
-    ├── ./language_model/ # Contains details of the unsupervised domain adaptation of language and 
-                            the details of different generation methods
-    ├── ./clip/  # Contains details of the CLIP model and how to perform the CLIPRe baseline
-    ├── ./evaluation/ # Contains details on how to perform evaluation on the inferenced results
-    ├── ./sh_folder/ # Contains details on how to perform inference with different methods
-    ├── ./zerocap/ # Contains details of the ZeroCap baseline
-    └── ./inference_result/ # Contains the inferenced results of all evaluated methods
+    ├──
+        ├── ./data/  # Contains details of how to prepare the benchmark data
+        ├── ./language_model/ # Contains details of the unsupervised domain adaptation of language and 
+                                the details of different generation methods
+        ├── ./clip/  # Contains details of the CLIP model and how to perform the CLIPRe baseline
+        ├── ./evaluation/ # Contains details on how to perform evaluation on the inferenced results
+        ├── ./sh_folder/ # Contains details on how to perform inference with different methods
+        ├── ./zerocap/ # Contains details of the ZeroCap baseline
+        └── ./inference_result/ # Contains the inferenced results of all evaluated methods
 
 ****
 ### Catalogue:
