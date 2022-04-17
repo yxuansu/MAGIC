@@ -99,7 +99,7 @@ To perform inference with the contrastive search baseline, please refer to detai
 <span id='clipre'/>
 
 #### 4.4. CLIPRe:
-To perform inference with the CLIPRe baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/clip).
+To perform inference with the CLIPRe baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/clip#clip).
 
 <span id='zerocap'/>
 
