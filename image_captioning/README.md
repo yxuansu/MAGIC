@@ -7,6 +7,7 @@ In this directory, we illustrate the details of our experiments on the task of z
 * <a href='#unsupervised_domain_adaptation'>2. Unsupervised Domain Adaptation</a>
     * <a href='#mscoco_adaptation'>2.1. MSCOCO</a>
     * <a href='#flickr30k_adaptation'>2.2. Flickr30k</a>
+    * <a href='#huggingface_models'>2.3. Huggingface Models</a>
 * <a href='#inference_with_magic'>3. Perform Inference with Magic</a>
 * <a href='#inference_with_baseline'>4. Perform Inference with Baseline Methods</a>
     * <a href='#topk_sampling'>4.1. Top-k Sampling</a>
@@ -40,3 +41,16 @@ To perform unsupervised domain adaptation on MSCOCO domain, please follow the in
 
 #### 2.2. Flickr30k:
 To perform unsupervised domain adaptation on Flickr30k domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#22-unsupervised-domain-adaptation-on-flickr30k). 
+
+
+#### 2.3. Huggingface Models:
+We provide our models adapted on MSCOCO and Flickr30k for an easy usage and the reproductivity of our results.
+
+|Model Name|Training Corpus|Model Size|Model Address|
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|cambridgeltl/magic_magic|MSCOCO|117M|[[link]](https://huggingface.co/cambridgeltl/magic_mscoco/)|
+|cambridgeltl/magic_flickr30k|Flickr30k|117M|[[link]](https://huggingface.co/cambridgeltl/magic_flickr30k/)|
+
+
+
+
