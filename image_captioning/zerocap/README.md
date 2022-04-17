@@ -1,14 +1,7 @@
 # Pytorch Implementation of [Zero-Shot Image-to-Text Generation for Visual-Semantic Arithmetic](https://arxiv.org/abs/2111.14447) [CVPR 2022]
 [[Paper]](https://arxiv.org/abs/2111.14447) [[Notebook]](https://www.kaggle.com/yoavstau/zero-shot-image-to-text/notebook) [[Caption Demo]](https://replicate.com/yoadtew/zero-shot-image-to-text) [[Arithmetic Demo]](https://replicate.com/yoadtew/arithmetic)
 
-## Approach
-![](git_images/Architecture.jpg)
 
-## Example of capabilities
-![](git_images/teaser.jpg)
-
-## Example of Visual-Semantic Arithmetic
-![](git_images/relations.jpg)
 
 ## Usage
 
