@@ -10,5 +10,5 @@ CUDA_VISIBLE_DEVICES=6 python run.py \
     --lm_model cambridgeltl/magic_flickr30k \
     --test_image_prefix_path ../data/mscoco/test_images \
     --test_path ../data/mscoco/mscoco_test.json \
-    --save_path_prefix ../inference_result/flickr30k_model_to_mscoco \
+    --save_path_prefix ../inference_result/flickr30k_model_to_mscoco/ \
     --save_name zerocap_result.json
