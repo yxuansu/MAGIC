@@ -42,6 +42,7 @@ To perform unsupervised domain adaptation on MSCOCO domain, please follow the in
 #### 2.2. Flickr30k:
 To perform unsupervised domain adaptation on Flickr30k domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#22-unsupervised-domain-adaptation-on-flickr30k). 
 
+<span id='huggingface_models'/>
 
 #### 2.3. Huggingface Models:
 We provide our models adapted on MSCOCO and Flickr30k for an easy usage and the reproductivity of our results.
