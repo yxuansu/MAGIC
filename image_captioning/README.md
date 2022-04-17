@@ -5,7 +5,8 @@ In this directory, we illustrate the details of our experiments on the task of z
 
     .
     ├── ./data/  # Contains details of how to prepare the benchmark data
-    ├── ./language_model/ # Contains details of the unsupervised domain adaptation of language and different generation methods
+    ├── ./language_model/ # Contains details of the unsupervised domain adaptation of language and 
+                            the details of different generation methods
     ├── ./clip/  # Contains details of the CLIP model and how to perform the CLIPRe baseline
 
     ├──
