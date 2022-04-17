@@ -109,10 +109,10 @@ To perform inference with the CLIPRe baseline, please refer to details [[here]](
 To perform inference with the ZeroCap baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/zerocap).
 
 
+****
 
+<span id='evaluation'/>
 
-
-
-
-
+### 5. Perform Evaluation:
+To obtain the numerical evaluation results on the inferenced results of the model, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/evaluation).
 
