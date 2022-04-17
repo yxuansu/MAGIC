@@ -1,6 +1,7 @@
 ## Inference Results
 This directory contains the results of all evaluated methods for the image captioning task.
 
+### 1. Directory Structure:
 > ****  The structure of the directory looks like:
 
     .
@@ -50,6 +51,8 @@ This directory contains the results of all evaluated methods for the image capti
         ├── nucleus_result_run_3.json # third run of nucleus sampling 
         ├── source_mscoco_target_flickr30k_clip_retrieval.json # CLIPRe 
         └──  # ZeroCap 
+
+### 2. Data Format of the Inferenced Result:
 
 The generated file is a list of dictionary, where the data format of each dictionary is:
 ```yaml
