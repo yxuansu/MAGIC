@@ -68,4 +68,50 @@ We provide our models adapted on MSCOCO and Flickr30k for an easy usage and the 
 
 
 
+****
+
+<span id='inference_with_magic'/>
+
+### 3. Perform Inference with Magic:
+To perform inference with our magic approach, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/sh_folder#1-magic-search).
+
+****
+
+<span id='inference_with_baseline'/>
+
+### 4. Perform Inference with Baseline Methods:
+
+<span id='topk_sampling'/>
+
+#### 4.1. Top-k Sampling:
+To perform inference with the top-k sampling baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/sh_folder#3-top-k-sampling) and [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#32-top-k-sampling-).
+
+
+* <a href='#'></a>
+* <a href='#'></a>
+    * <a href='#'>4.1. </a>
+    * <a href='#nucleues_sampling'>4.2. Nucleus Sampling</a>
+    * <a href='#contrastive_search'>4.3. Contrastive Search</a>
+    * <a href='#clipre'>4.4. CLIPRe</a>
+    * <a href='#zerocap'>4.5. ZeroCap</a>
+
+
+
+****
+
+<span id='inference_with_baseline'/>
+
+### 4. Perform Inference with Baseline Methods:
+
+<span id='mscoco_adaptation'/>
+
+#### 2.1. MSCOCO:
+
+<span id='mscoco_adaptation'/>
+
+#### 2.1. MSCOCO:
+
+* <a href='#'></a>
+
+
 
