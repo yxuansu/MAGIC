@@ -47,7 +47,7 @@ To perform unsupervised domain adaptation on Flickr30k domain, please follow the
 We provide our models adapted on MSCOCO and Flickr30k for an easy usage and the reproductivity of our results.
 
 |Model Name|Training Corpus|Model Size|Model Address|
-|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+|:-------------:|:-------------:|:-------------:|:-------------:|
 |cambridgeltl/magic_magic|MSCOCO|117M|[[link]](https://huggingface.co/cambridgeltl/magic_mscoco/)|
 |cambridgeltl/magic_flickr30k|Flickr30k|117M|[[link]](https://huggingface.co/cambridgeltl/magic_flickr30k/)|
 
