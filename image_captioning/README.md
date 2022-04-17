@@ -106,7 +106,7 @@ To perform inference with the CLIPRe baseline, please refer to details [[here]](
 #### 4.5. ZeroCap:
 To perform inference with the ZeroCap baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/zerocap).
 
-**[Note]** To ensure the reproductivity of our work, in this [[folder]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/inference_result), we provide the inferenced results of all evaluated methods.
+**[Note]** To ensure the reproductivity of our work, in this [folder](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/inference_result), we provide the inferenced results of all evaluated methods.
 
 
 
