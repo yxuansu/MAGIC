@@ -114,5 +114,5 @@ To perform inference with the ZeroCap baseline, please refer to details [[here]]
 <span id='evaluation'/>
 
 ### 5. Perform Evaluation:
-To obtain the numerical evaluation results on the inferenced results of the model, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/evaluation).
+To obtain the numerical evaluation on the inferenced results of the model, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/evaluation).
 
