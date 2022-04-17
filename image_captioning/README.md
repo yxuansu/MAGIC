@@ -5,6 +5,8 @@ In this directory, we illustrate the details of our experiments on the task of z
 ### Catalogue:
 * <a href='#data_preparation'>1. Data Preparation</a>
 * <a href='#unsupervised_domain_adaptation'>2. Unsupervised Domain Adaptation</a>
+    * <a href='#mscoco_adaptation'>2.1. MSCOCO</a>
+    * <a href='#flickr30k_adaptation'>2.2. Flickr30k</a>
 * <a href='#inference_with_magic'>3. Perform Inference with Magic</a>
 * <a href='#inference_with_baseline'>4. Perform Inference with Baseline Methods</a>
     * <a href='#topk_sampling'>4.1. Top-k Sampling</a>
@@ -27,4 +29,14 @@ To prepare the data for MSCOCO and Flickr30k benchmarks, please follow instructi
 <span id='unsupervised_domain_adaptation'/>
 
 ### 2. Unsupervised Domain Adaptation:
-To perform unsupervised domain adaptation on MSCOCO domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#12unsupervised-domain-adaptation-on-mscoco). To perform unsupervised domain adaptation on Flickr30k domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#22-unsupervised-domain-adaptation-on-flickr30k). 
+
+<span id='mscoco_adaptation'/>
+
+#### 2.1. MSCOCO:
+To perform unsupervised domain adaptation on MSCOCO domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#12unsupervised-domain-adaptation-on-mscoco). 
+
+
+<span id='flickr30k_adaptation'/>
+
+#### 2.2. Flickr30k:
+To perform unsupervised domain adaptation on Flickr30k domain, please follow the instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/language_model#22-unsupervised-domain-adaptation-on-flickr30k). 
