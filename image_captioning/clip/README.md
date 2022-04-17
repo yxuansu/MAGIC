@@ -53,7 +53,7 @@ The arguments are as follows:
 * `--save_index_prefix`: In which directory you would like to store your index files.
 * `--save_index_name`: The saved name of the caption representations.
 * `--save_mapping_dict_name`: The saved name of the mapping dictionary between representations and captions.
-* `--batch_siz`: The inference batch size.
+* `--batch_size`: The inference batch size.
 
 
 <span id='flickr30k'/>
@@ -88,7 +88,7 @@ The arguments are as follows:
 * `--save_index_prefix`: In which directory you would like to store your index files.
 * `--save_index_name`: The saved name of the caption representations.
 * `--save_mapping_dict_name`: The saved name of the mapping dictionary between representations and captions.
-* `--batch_siz`: The inference batch size.
+* `--batch_size`: The inference batch size.
 
 ****
 
