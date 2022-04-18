@@ -1,3 +1,7 @@
+## Data Preparation
+Here, we provide the test set of ROCStories benchmark that we use in our experiments. In the file, each line follows the format of: story tile + \t + human-written story. 
+
+
 ****
 ### Catalogue:
 * <a href='#prepare_image_index'>1. Prepare Image Index</a>
