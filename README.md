@@ -76,35 +76,35 @@ pip3 install -r requirements.txt
 
 <span id='image_captioning_experiment'/>
 
-#### 5.1. Implementation of Experiments: 
+##### 5.1. Implementation of Experiments: 
 To ensure the reproductity of our work, we provide all related resources to implement our experiments on the task of zero-shot image captioning. Please refer more details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning). 
 
 <span id='image_captioning_magic_search'/>
 
-#### 5.2. Example Usage of Magic Search: 
+##### 5.2. Example Usage of Magic Search: 
 
 In the following, we illustrate how to perform zero-shot image captioning with magic search.
 
 
 <span id='image_captioning_language_model'/>
 
-##### 5.2.1. Load Language Model: 
+###### 5.2.1. Load Language Model: 
 
 <span id='image_captioning_CLIP'/>
 
-##### 5.2.2. Load CLIP: 
+###### 5.2.2. Load CLIP: 
 
 <span id='image_captioning_start_token'/>
 
-##### 5.2.3. Prepare Start Token: 
+###### 5.2.3. Prepare Start Token: 
 
 <span id='image_captioning_load_image'/>
 
-##### 5.2.4. Load Image: 
+###### 5.2.4. Load Image: 
 
 <span id='image_captioning_magic_search'/>
 
-##### 5.2.5. Zero-Shot Image Captioning with Magic Search: 
+###### 5.2.5. Zero-Shot Image Captioning with Magic Search: 
 
 
 ****
