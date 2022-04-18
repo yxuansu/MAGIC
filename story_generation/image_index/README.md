@@ -90,7 +90,7 @@ The retrieved images are:
 
 ![Alt text](example_images/f110f8e0fa9b1adc0cd36515e8771a02--davids-bridal-bridesmaid-long-bridesmaid-dresses.jpg?raw=true "Image 2 of Example 1")
 
-![Alt text](example_images/stock-photo-isolated-image-of-a-beautiful-asian-girl-accepting-a-colourful-bunch-of-flowers-nature-love-145062391.jpg?raw=true "Image 2 of Example 1")
+![Alt text](example_images/stock-photo-isolated-image-of-a-beautiful-asian-girl-accepting-a-colourful-bunch-of-flowers-nature-love-145062391.jpg?raw=true "Image 3 of Example 1")
 
 
 
