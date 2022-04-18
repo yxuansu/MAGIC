@@ -144,10 +144,24 @@ display(image_instance)
 <span id='image_captioning_magic_search'/>
 
 ##### 5.2.5. Zero-Shot Image Captioning with Magic Search: 
-
+Now, let's generate the image caption with magic search!
 ```python
+'''
+   setup the configurations of magic search
+      k: the k in magic search
+      alpha: the alpha in magic search
+      beta: the beta in magic search
+      decoding_len: the number of tokens to generate
+'''
+k, alpha, beta, decoding_len = 45, 0.1, 2.0, 16
+eos_token = '<|endoftext|>'
+output = generation_model.magic_search(input_ids, k, 
+        alpha, decoding_len, beta, image_instance, clip, 60)
+print (output)
+'''
+   A street sign with a building in the background.
+'''
 ```
-
 
 ****
 
