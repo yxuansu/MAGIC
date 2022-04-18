@@ -82,29 +82,60 @@ To ensure the reproductity of our work, we provide all related resources to impl
 <span id='image_captioning_magic_search'/>
 
 #### 5.2. Example Usage of Magic Search: 
-
-In the following, we illustrate how to perform zero-shot image captioning with magic search.
-
+In the following, we illustrate how to perform zero-shot image captioning with magic search. Specifically, we show how to generate the results as shown in our case study in the paper.
 
 <span id='image_captioning_language_model'/>
 
-##### 5.2.1. Load Language Model: 
+##### 5.2.1. Load Language Model:
+We first load the language model as:
+```python
+import sys
+sys.path.append(r'./image_captioning/language_model/')
+from simctg import SimCTG
+language_model_name = r'cambridgeltl/magic_mscoco'
+sos_token, pad_token = r'<-start_of_text->', r'<-pad->'
+generation_model = SimCTG(language_model_name, sos_token, pad_token)
+generation_model.eval()
+```
 
 <span id='image_captioning_CLIP'/>
 
 ##### 5.2.2. Load CLIP: 
+Then, we load the CLIP model as:
+```python
+import sys
+sys.path.append(r'./image_captioning/clip/')
+from clip import CLIP
+model_name = "openai/clip-vit-base-patch32"
+clip = CLIP(model_name)
+clip.eval()
+```
 
 <span id='image_captioning_start_token'/>
 
 ##### 5.2.3. Prepare Start Token: 
+Note that, the language model always starts generation with a special start of sentence token. Here, we prepare the input ids of the start token.
+```python
+import torch
+sos_token = r'<-start_of_text->'
+start_token = generation_model.tokenizer.tokenize(sos_token)
+start_token_id = generation_model.tokenizer.convert_tokens_to_ids(start_token)
+input_ids = torch.LongTensor(start_token_id).view(1,-1)
+```
 
 <span id='image_captioning_load_image'/>
 
 ##### 5.2.4. Load Image: 
 
+```python
+```
+
 <span id='image_captioning_magic_search'/>
 
 ##### 5.2.5. Zero-Shot Image Captioning with Magic Search: 
+
+```python
+```
 
 
 ****
