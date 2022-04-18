@@ -1,10 +1,10 @@
 ## Data Preparation
 Here, we provide the test set of ROCStories benchmark that we use in our experiments. In the file, each line follows the format below:
 ```yaml
-story tile + \t + human-written story. 
+story tile + \t + human-written story
 ```
 
-
+In the following, we illustrate how to build the image index from which we retrieve images based on the given story title.
 
 ****
 ### Catalogue:
