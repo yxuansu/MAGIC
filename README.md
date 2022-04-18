@@ -66,6 +66,7 @@ pip3 install -r requirements.txt
 <span id='image_captioning'/>
 
 #### 5. Zero-Shot Image Captioning:
+[In this folder](https://github.com/yxuansu/MAGIC/tree/main/image_captioning), we provide all related resources to reimplement our experiments in the task of zero-shot image captioning. In the following, we illustrate how to perform zero-shot image captioning with magic search.
 
 
 ****
