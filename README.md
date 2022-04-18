@@ -114,7 +114,7 @@ clip.eval()
 <span id='image_captioning_start_token'/>
 
 ##### 5.2.3. Prepare Start Token: 
-Note that, the language model always starts generation with a special start of sentence token. Here, we prepare the input ids of the start token.
+Note that, the language model always starts generation with a start of sentence token. Here, we prepare the input ids of the start token.
 ```python
 import torch
 sos_token = r'<-start_of_text->'
@@ -126,8 +126,16 @@ input_ids = torch.LongTensor(start_token_id).view(1,-1)
 <span id='image_captioning_load_image'/>
 
 ##### 5.2.4. Load Image: 
-
+To generate the caption of a random image, we need to load the image as:
 ```python
+from PIL import Image             # to load images
+from IPython.display import display # to display images
+image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000261779.jpg', 
+                   'COCO_val2014_000000299319.jpg', 'COCO_val2014_000000516750.jpg']
+index = 0 # you can reproduce all results shown in our case study by changing the index.
+image_path = r'./image_captioning/example_images/' + image_name_list[index]
+image_instance = Image.open(image_path)
+display(image_instance)
 ```
 
 <span id='image_captioning_magic_search'/>
