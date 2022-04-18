@@ -6,7 +6,9 @@ Here, we illustrate how to construct the image index from scratch. In addition, 
 * <a href='#build_index'>1. Build Image Index from Scratch</a>
 * <a href='#example_usage'>2. Example Usage</a>
     * <a href='#load_clip'>2.1. Load CLIP</a>
-    * <a href='#postprocess_flickr30k'>2.2. Post-process Data by Yourself</a>
+    * <a href='#load_index'>2.2. Load Image Index</a>
+    * <a href='#example_1'>2.3. Example 1</a>
+    * <a href='#example_2'>2.4. Example 2</a>
 
 ****
 
@@ -33,6 +35,39 @@ The arguments are as follows:
 <span id='example_usage'/>
 
 ### 2. Example Usage:
-After constructing the image index, we can retrieve the 
+After constructing the image index, we can retrieve the related images based on the text input. In the following, we provide two examples on how to perform the image retrieval process.
+
+<span id='load_clip'/>
+
+#### 2.1. Load CLIP:
+We first load the off-the-shelf CLIP model as:
+```python
+import sys
+sys.path.append(r'../clip')
+from clip import CLIP
+model_name = "openai/clip-vit-base-patch32"
+clip = CLIP(model_name)
+clip.eval()
+```
+
+<span id='load_index'/>
+
+#### 2.2. Load Image Index:
+Then, we load the constructed image index as:
+```python
+from imageindex import ImageIndex
+index_path = r'../data/image_index/images_index_data/index_matrix.txt'
+mapping_dict_path = r'../data/image_index/images_index_data/mapping_dict.json'
+image_folder_prefix_path = r'../data/image_index/images/'
+index = ImageIndex(index_path, mapping_dict_path, image_folder_prefix_path, clip)
+```
+
+**[Note]** The arguments index_path, mapping_dict_path, and image_folder_prefix_path should be the same as you set in the build_index.sh script. 
+
+
+    * <a href='#'></a>
+    * <a href='#'></a>
+    * <a href='#example_1'>2.3. Example 1</a>
+    * <a href='#example_2'>2.4. Example 2</a>
 
 
