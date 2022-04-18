@@ -88,6 +88,10 @@ The retrieved images are:
 <img src="https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index/example_images/3a8faacd322e262dbe1de2e837508449--daddys-little-girls-baby-girls.jpg" width="400" height="280">
 <img src="https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index/example_images/f110f8e0fa9b1adc0cd36515e8771a02--davids-bridal-bridesmaid-long-bridesmaid-dresses.jpg" width="400" height="280">
 <img src="https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index/example_images/stock-photo-isolated-image-of-a-beautiful-asian-girl-accepting-a-colourful-bunch-of-flowers-nature-love-145062391.jpg" width="400" height="280">
+
+
+
+
     * <a href='#example_2'>2.4. Example 2</a>
 
 
