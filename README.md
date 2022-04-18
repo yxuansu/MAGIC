@@ -163,7 +163,7 @@ print (output)
 '''
 ```
 
-Alternatively, you can directly run this [file](https://github.com/yxuansu/MAGIC/blob/main/image_caption_demo.py) to see the results.
+**[Note]** If you are looking for a python file that runs the above example, you can run this [file](https://github.com/yxuansu/MAGIC/blob/main/image_caption_demo.py) to see the results.
 
 ****
 
