@@ -82,5 +82,5 @@ The first entry in the above example means that the "0"-th line of index_matrix.
 <span id='build_own_index'/>
 
 #### 2. Build Your Own Image Index:
-If you would like to rebuild a new image index with CLIP, you should first prepare a set of your own images and put them under a directory as described in section 1.1. Then, you can build your own index following our provided instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_index).
+If you would like to rebuild a new image index with CLIP, you should first prepare a set of your own images and put them under a directory as described in section 1.1. Then, you can build your own index following our provided instructions [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index).
 
