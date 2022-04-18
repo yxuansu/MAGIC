@@ -26,7 +26,7 @@ The arguments are as follows:
 * `--save_image_name_dict`: The name used to save the mapping dictionary.
 * `--batch_size`: The inference batch size.
 
-**[Note]** Before constructing the image index, please make sure you have prepared the raw images as demonstrated [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/data#11-download-raw-images)
+**[Note]** Before constructing the image index, please make sure you have prepared the raw images as demonstrated [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/data#11-download-raw-images).
 
 ****
 
