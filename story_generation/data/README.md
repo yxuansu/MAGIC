@@ -14,7 +14,7 @@
 <span id='download_images'/>
 
 ##### 1.1 Download Raw Images:
-Please download the images via [[google drive]](https://drive.google.com/file/d/1TZOxHdGxi_uKnRkVP-bUq0d0yjq8Ny_D/view?usp=sharing). The file has a size around 30GB. After downloading, run the following command to unzip it under the ./image_index/ directory.
+Please download the images via [[google drive]](https://drive.google.com/file/d/1TZOxHdGxi_uKnRkVP-bUq0d0yjq8Ny_D/view?usp=sharing). The file has a size around 30GB. After downloading, run the following command to unzip it **under the ./image_index/ directory**.
 ```yaml
 unzip images.zip
 ```
@@ -36,7 +36,7 @@ After unzipping, the directory ./image_index/images/ should contain around **330
 <span id='download_index'/>
 
 ##### 1.2 Download Index Files:
-After downloading raw images, please download the index files via [[google drive]](https://drive.google.com/file/d/13qCKHdGuV1Rp3KbWHRSS6FStd-fnF48i/view). Please unzip the file under the ./image_index/ directory.
+After downloading raw images, please download the index files via [[google drive]](https://drive.google.com/file/d/13qCKHdGuV1Rp3KbWHRSS6FStd-fnF48i/view). Please unzip the file **under the ./image_index/ directory**.
 ```yaml
 unzip images_index_data.zip
 ```
