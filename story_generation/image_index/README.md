@@ -86,15 +86,32 @@ The search_image() method takes two arguments:
 
 The retrieved images are:
 
-![Alt text](example_images/3a8faacd322e262dbe1de2e837508449--daddys-little-girls-baby-girls.jpg?raw=true "Image 2 of Example 1")
+![Alt text](example_images/3a8faacd322e262dbe1de2e837508449--daddys-little-girls-baby-girls.jpg?raw=true "Image 1 of Example 1")
 
 ![Alt text](example_images/f110f8e0fa9b1adc0cd36515e8771a02--davids-bridal-bridesmaid-long-bridesmaid-dresses.jpg?raw=true "Image 2 of Example 1")
 
 ![Alt text](example_images/stock-photo-isolated-image-of-a-beautiful-asian-girl-accepting-a-colourful-bunch-of-flowers-nature-love-145062391.jpg?raw=true "Image 3 of Example 1")
 
 
+<span id='example_2'/>
 
+#### 2.4. Example 2:
+Here, we provide the first example.
+```python
+text = 'Warm Holiday'
+image_name_list, image_instance_list = index.search_image(text, top_k=3)
 
-    * <a href='#example_2'>2.4. Example 2</a>
+from IPython.display import display # to display images
+for image_instance in image_instance_list:
+    display(image_instance)
+```
+
+The retrieved images are:
+
+![Alt text](example_images/stock-photo-man-and-woman-in-warm-knitted-socks-in-front-of-the-fireplace-774906544.jpg?raw=true "Image 1 of Example 2")
+
+![Alt text](example_images/christmas-couple-at-the-beach-KD3EX0.jpg?raw=true "Image 2 of Example 2")
+
+![Alt text](example_images/person-warming-their-hands-over-a-fire-axkx9j.jpg?raw=true "Image 3 of Example 2")
 
 
