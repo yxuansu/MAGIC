@@ -1,5 +1,9 @@
 ## Data Preparation
-Here, we provide the test set of ROCStories benchmark that we use in our experiments. In the file, each line follows the format of: story tile + \t + human-written story. 
+Here, we provide the test set of ROCStories benchmark that we use in our experiments. In the file, each line follows the format below:
+```yaml
+story tile + \t + human-written story. 
+```
+
 
 
 ****
