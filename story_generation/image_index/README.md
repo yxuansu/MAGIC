@@ -64,10 +64,27 @@ index = ImageIndex(index_path, mapping_dict_path, image_folder_prefix_path, clip
 
 **[Note]** The arguments index_path, mapping_dict_path, and image_folder_prefix_path should be the same as you set in the build_index.sh script. 
 
+<span id='example_1'/>
 
-    * <a href='#'></a>
-    * <a href='#'></a>
-    * <a href='#example_1'>2.3. Example 1</a>
+#### 2.3. Example 1:
+Here, we provide the first example.
+```python
+text = 'Maid Of Honor'
+image_name_list, image_instance_list = index.search_image(text, top_k=3)
+'''
+   image_name_list: The list of names of the retrieved images.
+   image_instance_list: The list of instances of the retrieved images.
+'''
+
+from IPython.display import display # to display images
+for image_instance in image_instance_list:
+    display(image_instance)
+```
+The search_image() method takes two arguments:
+* `--text`: The input text.
+* `--top_k`: The number of retrieved images.
+
+
     * <a href='#example_2'>2.4. Example 2</a>
 
 
