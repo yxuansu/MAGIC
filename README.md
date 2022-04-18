@@ -10,6 +10,11 @@
 * <a href='#image_captioning'>5. Zero-Shot Image Captioning</a>
     * <a href='#image_captioning_experiment'>5.1. Implementation of Experiments</a>
     * <a href='#image_captioning_magic_search'>5.2. Example Usage of Magic Search</a>
+         * <a href='#image_captioning_language_model'>5.2.1. Load Language Model</a>
+         * <a href='#image_captioning_CLIP'>5.2.2. Load CLIP</a>
+         * <a href='#image_captioning_start_token'>5.2.3. Prepare Start Token</a>
+         * <a href='#image_captioning_load_image'>5.2.4. Load Image</a>
+         * <a href='#image_captioning_magic_search'>5.2.5. Zero-Shot Image Captioning with Magic Search</a>
 * <a href='#story_generation'>6. Visually Grounded Story Generation</a>
 * <a href='#contact'>7. Contact</a>
 
@@ -81,6 +86,25 @@ To ensure the reproductity of our work, we provide all related resources to impl
 In the following, we illustrate how to perform zero-shot image captioning with magic search.
 
 
+<span id='image_captioning_language_model'/>
+
+##### 5.2.1. Load Language Model: 
+
+<span id='image_captioning_CLIP'/>
+
+##### 5.2.2. Load CLIP: 
+
+<span id='image_captioning_start_token'/>
+
+##### 5.2.3. Prepare Start Token: 
+
+<span id='image_captioning_load_image'/>
+
+##### 5.2.4. Load Image: 
+
+<span id='image_captioning_magic_search'/>
+
+##### 5.2.5. Zero-Shot Image Captioning with Magic Search: 
 
 
 ****
