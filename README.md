@@ -14,7 +14,7 @@
          * <a href='#image_captioning_CLIP'>5.2.2. Load CLIP</a>
          * <a href='#image_captioning_start_token'>5.2.3. Prepare Start Token</a>
          * <a href='#image_captioning_load_image'>5.2.4. Load Image</a>
-         * <a href='#image_captioning_magic_search'>5.2.5. Zero-Shot Image Captioning with Magic Search</a>
+         * <a href='#image_captioning_magic_search_result'>5.2.5. Zero-Shot Image Captioning with Magic Search</a>
 * <a href='#story_generation'>6. Visually Grounded Story Generation</a>
 * <a href='#contact'>7. Contact</a>
 
@@ -141,7 +141,7 @@ display(image_instance)
 <img src="https://github.com/yxuansu/MAGIC/blob/main/image_captioning/example_images/COCO_val2014_000000182784.jpg" width="400" height="280">
 
 
-<span id='image_captioning_magic_search'/>
+<span id='image_captioning_magic_search_result'/>
 
 ##### 5.2.5. Zero-Shot Image Captioning with Magic Search: 
 Now, let's generate the image caption with magic search!
