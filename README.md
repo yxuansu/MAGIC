@@ -138,6 +138,9 @@ image_instance = Image.open(image_path)
 display(image_instance)
 ```
 
+<img src="https://github.com/yxuansu/MAGIC/blob/main/image_captioning/example_images/COCO_val2014_000000336777.jpg" width="400" height="280">
+
+
 <span id='image_captioning_magic_search'/>
 
 ##### 5.2.5. Zero-Shot Image Captioning with Magic Search: 
