@@ -132,13 +132,13 @@ from PIL import Image             # to load images
 from IPython.display import display # to display images
 image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000182784.jpg', 
                    'COCO_val2014_000000299319.jpg', 'COCO_val2014_000000516750.jpg']
-index = 0 # you can reproduce all results shown in our case study by changing the index.
+index = 1 # you can reproduce all results shown in our case study by changing the index.
 image_path = r'./image_captioning/example_images/' + image_name_list[index]
 image_instance = Image.open(image_path)
 display(image_instance)
 ```
 
-<img src="https://github.com/yxuansu/MAGIC/blob/main/image_captioning/example_images/COCO_val2014_000000336777.jpg" width="400" height="280">
+<img src="https://github.com/yxuansu/MAGIC/blob/main/image_captioning/example_images/COCO_val2014_000000182784.jpg" width="400" height="280">
 
 
 <span id='image_captioning_magic_search'/>
@@ -159,7 +159,7 @@ output = generation_model.magic_search(input_ids, k,
         alpha, decoding_len, beta, image_instance, clip, 60)
 print (output)
 '''
-   A street sign with a building in the background.
+   A large cow standing in a street stall.
 '''
 ```
 
