@@ -4,8 +4,8 @@ Here, we illustrate how to construct the image index from scratch. In addition, 
 ****
 ### Catalogue:
 * <a href='#build_index'>1. Build Image Index from Scratch</a>
-* <a href='#example_usage'>2. Example Usage </a>
-    * <a href='#download_flickr30k'>1.1. Download Post-processed Data</a>
+* <a href='#example_usage'>2. Example Usage</a>
+    * <a href='#load_clip'>2.1. Load CLIP</a>
     * <a href='#postprocess_flickr30k'>2.2. Post-process Data by Yourself</a>
 
 ****
@@ -13,7 +13,7 @@ Here, we illustrate how to construct the image index from scratch. In addition, 
 <span id='build_index'/>
 
 ### 1. Build Image Index from Scratch:
-Generally speaking, given a set of raw images, we use CLIP to compute their representations and store them in several files for an easy access. To build your own image index, you should run the following command:
+Given a set of raw images, we use CLIP to compute their representations and store them in several files for an easy access. To build your own image index, you should run the following command:
 ```yaml
 chmod +x ./build_index.sh
 ./build_index.sh
@@ -26,6 +26,13 @@ The arguments are as follows:
 * `--save_image_name_dict`: The name used to save the mapping dictionary.
 * `--batch_size`: The inference batch size.
 
+**[Note]** Before constructing the image index, please make sure you have prepared the raw images as demonstrated [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/data#11-download-raw-images)
 
+****
+
+<span id='example_usage'/>
+
+### 2. Example Usage:
+After constructing the image index, we can retrieve the 
 
 
