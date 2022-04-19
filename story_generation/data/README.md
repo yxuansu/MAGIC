@@ -44,7 +44,7 @@ After unzipping, the directory ./image_index/images/ should contain around **330
 <span id='download_index'/>
 
 ##### 1.2 Download Index Files:
-After downloading raw images, please download the index files via [[google drive]](https://drive.google.com/file/d/13qCKHdGuV1Rp3KbWHRSS6FStd-fnF48i/view). Please unzip the file **under the ./image_index/ directory**.
+After downloading raw images, please download the index files via [[google drive]](https://drive.google.com/file/d/1G1pGpZRZJWMkCKhR4w_Eoh0JjGRH5ZFJ/view?usp=sharing). Please unzip the file **under the ./image_index/ directory**.
 ```yaml
 unzip images_index_data.zip
 ```
