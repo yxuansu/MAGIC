@@ -22,7 +22,7 @@ In the following, we illustrate how to build the image index from which we retri
 <span id='download_images'/>
 
 ##### 1.1 Download Raw Images:
-Please download the images via [[google drive]](https://drive.google.com/file/d/1TZOxHdGxi_uKnRkVP-bUq0d0yjq8Ny_D/view?usp=sharing). The file has a size around 30GB. After downloading, run the following command to unzip it **under the ./image_index/ directory**.
+Please download the images via [[google drive]](https://drive.google.com/file/d/1yQc9hFOQGfqsa1vG6m0SRCZAdaDwy9Qi/view?usp=sharing). The file has a size around 30GB. After downloading, run the following command to unzip it **under the ./image_index/ directory**.
 ```yaml
 unzip images.zip
 ```
