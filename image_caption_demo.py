@@ -42,3 +42,11 @@ for image_name in image_name_list:
 # A large cow standing in a street stall.
 # A couple of people walking down a rainy street.
 # A yellow boat is lined up on the beach.
+# Large pizza with vegetables and cheese on a wooden table.
+# A baseball player swinging a bat at a ball.
+# A large giraffe standing in a zoo enclosure.
+# A child playing with a disc in a backyard.
+# A zooming person surfing on a wave in the ocean.
+# A plate topped with cake and fork.
+# A bird eating bread from a table.
+# A cat laying on top of a bed.
