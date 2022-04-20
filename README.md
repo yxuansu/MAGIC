@@ -193,8 +193,17 @@ In the following, we illustrate how to perform visually grounded story generatio
 <span id='story_generation_language_model'/>
 
 ##### 6.2.1. Load Language Model: 
-
-
+We first load the language model as:
+```python
+import sys
+sys.path.append(r'./story_generation/language_model')
+from transformers import AutoTokenizer
+from simctg import SimCTG
+language_model_name = r'cambridgeltl/simctg_rocstories'
+tokenizer = AutoTokenizer.from_pretrained(language_model_name)
+generation_model = SimCTG(language_model_name, tokenizer.pad_token_id)
+generation_model.eval()
+```
 
 
 
