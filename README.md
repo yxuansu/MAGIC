@@ -295,8 +295,25 @@ for name in image_name_list:
 ##### 6.2.3. Visually Grounded Story Generation with Magic Search: 
 Now, let's generate the story with magic search as
 ```python
-# Recall that our story title is 'The Girls <|endoftext|>'
+# Recall that our story title is: 'The Girls <|endoftext|>'
+
+# Let's generate the story conditioned on the top-1 image
+from IPython.display import display
+k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
+image_instance = image_instance_list[0]
+eos_token = r'<|endoftext|>'
+output, _ = generation_model.magic_search(title_ids, k, alpha, decoding_len, beta, image_instance, 
+        clip, 60, eos_token)
+_, generated_story = generation_model.parse_generated_result(output, num_of_sentences_to_keep=5)
+print (generated_story)
+display(image_instance)
+'''
+   A group of girls went to the bar. They wanted to meet up with their friends. The girls were shy 
+   and didn't know each other. When they got there, they started talking. They ended up meeting up 
+   at the club and had a great time.
+'''
 ```
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="280" height="280">
 
 ****
 
