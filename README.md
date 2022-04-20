@@ -134,7 +134,11 @@ image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000182784.j
                    'COCO_val2014_000000207151.jpg', 'COCO_val2014_000000078707.jpg', 'COCO_val2014_000000027440.jpg', 'COCO_val2014_000000033645.jpg',
                    'COCO_val2014_000000348905.jpg', 'COCO_val2014_000000545385.jpg', 'COCO_val2014_000000210032.jpg', 'COCO_val2014_000000577526.jpg']
 index = 1 
-# you can reproduce all results shown in our case study (index from 0 to 3)and the results in the appendix (index from 4 to 11).
+'''
+   you can reproduce all results shown in our case study (index from 0 to 3) 
+   and the results in the appendix (index from 4 to 11).
+'''
+
 image_path = r'./image_captioning/example_images/' + image_name_list[index]
 image_instance = Image.open(image_path)
 display(image_instance)
