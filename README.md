@@ -22,6 +22,7 @@
          * <a href='#story_generation_get_image'>6.2.2. Get the Related Image</a>
               * <a href='#story_generation_get_image_from_index'>6.2.2.1. Retrieve from Image Index</a>
               * <a href='#story_generation_get_image_from_example'>6.2.2.2. Directly Load Image</a>
+         * <a href='#story_generation_magic_search_result'>6.2.3. Visually Grounded Story Generation with Magic Search</a>
 * <a href='#contact'>7. Contact</a>
 
 ****
@@ -287,6 +288,14 @@ for name in image_name_list:
     image_path = r'./story_generation/example_images/' + name
     image_instance = Image.open(image_path)
     image_instance_list.append(image_instance)
+```
+
+<span id='story_generation_magic_search_result'/>
+
+##### 6.2.3. Visually Grounded Story Generation with Magic Search: 
+Now, let's generate the story with magic search as
+```python
+# Recall that our story title is 'The Girls <|endoftext|>'
 ```
 
 ****
