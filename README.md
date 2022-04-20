@@ -225,6 +225,31 @@ Next, let's get the images that are related to the story tile. We provide **two*
 ###### 6.2.2.1. Retrieve from Image Index: 
 The first way is to retrieve the images from a constructed image index. Before running the following commands, please make sure you have built the image index from scrath as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index#1-build-image-index-from-scratch) or downloaded our provided image index as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/data#1-prepare-image-index).
 
+After the image index is ready, we can load the image index as
+```python
+# load CLIP
+import sys
+sys.path.append(r'./story_generation/clip')
+from clip import CLIP
+model_name = "openai/clip-vit-base-patch32"
+clip = CLIP(model_name)
+clip.eval()
+
+# build image index
+import sys
+sys.path.append(r'./story_generation/image_index')
+from imageindex import ImageIndex
+index_path = r'./story_generation/data/image_index/images_index_data/index_matrix.txt'
+mapping_dict_path = r'./story_generation/data/image_index/images_index_data/mapping_dict.json'
+image_folder_prefix_path = r'./story_generation/data/image_index/images/'
+index = ImageIndex(index_path, mapping_dict_path, image_folder_prefix_path, clip)
+```
+
+
+
+
+and retrieve the related images as
+
 <span id='story_generation_get_image_from_example'/>
 
 ###### 6.2.2.2. Directly Load Image: 
