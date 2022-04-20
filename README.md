@@ -258,7 +258,7 @@ Let's see the top-3 images we got
 from IPython.display import display
 display(image_instance_list[0])
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="380" height="380">
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="280" height="280">
 
 
 
