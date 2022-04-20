@@ -265,7 +265,7 @@ display(image_instance_list[0])
 # display the top-2 image
 display(image_instance_list[1])
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/tumblr_mg8efpjTB71rm9r1xo1_1280.jpg" width="280" height="280">
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/tumblr_mg8efpjTB71rm9r1xo1_1280.jpg" width="250" height="280">
 
 ```python
 # display the top-3 image
