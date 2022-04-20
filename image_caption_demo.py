@@ -24,8 +24,9 @@ start_token = generation_model.tokenizer.tokenize(sos_token)
 start_token_id = generation_model.tokenizer.convert_tokens_to_ids(start_token)
 input_ids = torch.LongTensor(start_token_id).view(1,-1).to(device)
 
-image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000182784.jpg',
-                   'COCO_val2014_000000299319.jpg', 'COCO_val2014_000000516750.jpg']
+image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000182784.jpg', 'COCO_val2014_000000299319.jpg', 'COCO_val2014_000000516750.jpg',
+                   'COCO_val2014_000000207151.jpg', 'COCO_val2014_000000078707.jpg', 'COCO_val2014_000000027440.jpg', 'COCO_val2014_000000033645.jpg',
+                   'COCO_val2014_000000348905.jpg', 'COCO_val2014_000000545385.jpg', 'COCO_val2014_000000210032.jpg', 'COCO_val2014_000000577526.jpg']
 
 k, alpha, beta, decoding_len = 45, 0.1, 2.0, 16
 eos_token = '<|endoftext|>'
