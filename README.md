@@ -272,7 +272,7 @@ display(image_instance_list[1])
 # display the top-3 image
 display(image_instance_list[2])
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="280" height="280">
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="320" height="280">
 
 
 
@@ -332,7 +332,22 @@ display(image_instance)
 ```
 <img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/tumblr_mg8efpjTB71rm9r1xo1_1280.jpg" width="250" height="280">
 
-
+Lastly, let's generate the story conditioned on the top-3 image
+```python
+k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
+image_instance = image_instance_list[2]
+eos_token = r'<|endoftext|>'
+output, _ = generation_model.magic_search(title_ids, k, alpha, decoding_len, beta, image_instance, 
+        clip, 60, eos_token)
+_, generated_story = generation_model.parse_generated_result(output, num_of_sentences_to_keep=5)
+print (generated_story)
+display(image_instance)
+'''
+   The girls were in a band. They wanted to play in front of their friends. They practiced every day.
+   It was hard for them to get good at anything. They decided to disband the band in the fall.
+'''
+```
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="320" height="280">
 ****
 
 <span id='contact'/>
