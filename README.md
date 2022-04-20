@@ -185,6 +185,18 @@ print (output)
 #### 6.1. Implementation of Experiments: 
 
 
+<span id='story_generation_magic_search'/>
+
+#### 6.2. Example Usage of Magic Search: 
+In the following, we illustrate how to perform visually grounded story generation with magic search. Specifically, we show how to generate the results as shown in our case study in the paper.
+
+<span id='story_generation_language_model'/>
+
+##### 6.2.1. Load Language Model: 
+
+
+
+
 
 
 ****
