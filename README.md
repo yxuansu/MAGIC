@@ -215,6 +215,20 @@ title_ids = torch.LongTensor(title_id_list).view(1,-1)
 ```
 
 
+<span id='story_generation_get_image'/>
+
+##### 6.2.2. Get the Related Image: 
+Next, let's get the images that are related to the story tile. We provide two ways of doing it as in the following:
+
+<span id='story_generation_get_image_from_index'/>
+
+###### 6.2.2.1. Retrieve from Image Index: 
+
+<span id='story_generation_get_image_from_example'/>
+
+###### 6.2.2.2. Directly Load Image: 
+
+
 
 
 ****
