@@ -193,7 +193,7 @@ In the following, we illustrate how to perform visually grounded story generatio
 <span id='story_generation_language_model'/>
 
 ##### 6.2.1. Load Language Model: 
-We first load the language model as:
+We first load the language model and prepare the story title as:
 ```python
 import sys
 sys.path.append(r'./story_generation/language_model')
@@ -203,6 +203,12 @@ language_model_name = r'cambridgeltl/simctg_rocstories'
 tokenizer = AutoTokenizer.from_pretrained(language_model_name)
 generation_model = SimCTG(language_model_name, tokenizer.pad_token_id)
 generation_model.eval()
+
+import torch
+title = 'The Girls <|endoftext|>'
+title_tokens = tokenizer.tokenize(title)
+title_id_list = tokenizer.convert_tokens_to_ids(title_tokens)
+title_ids = torch.LongTensor(title_id_list).view(1,-1)
 ```
 
 
