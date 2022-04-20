@@ -293,7 +293,7 @@ for name in image_name_list:
 <span id='story_generation_magic_search_result'/>
 
 ##### 6.2.3. Visually Grounded Story Generation with Magic Search: 
-Recall that, in this example, our story title is 'The Girls <|endoftext|>'.
+**[Note]** Recall that, in this example, our story title is 'The Girls <|endoftext|>'.
 
 Now, Let's generate the story conditioned on the top-1 image
 ```python
