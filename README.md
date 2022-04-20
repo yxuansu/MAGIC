@@ -278,9 +278,16 @@ display(image_instance_list[2])
 <span id='story_generation_get_image_from_example'/>
 
 ###### 6.2.2.2. Directly Load Image: 
-
-
-
+Alternatively, if you have not prepared the image index, we have provided these three images in the repo. You can directly load them as
+```python
+from PIL import Image
+image_name_list = ['0b85a432e15c45bd55c3e83063e819c9.jpg', 'tumblr_mg8efpjTB71rm9r1xo1_1280.jpg','08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg']
+image_instance_list = []
+for name in image_name_list:
+    image_path = r'./story_generation/example_images/' + name
+    image_instance = Image.open(image_path)
+    image_instance_list.append(image_instance)
+```
 
 ****
 
