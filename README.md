@@ -19,10 +19,11 @@
     * <a href='#story_generation_experiment'>6.1. Implementation of Experiments</a>
     * <a href='#story_generation_magic_search'>6.2. Example Usage of Magic Search</a>
          * <a href='#story_generation_language_model'>6.2.1. Load Language Model</a>
-         * <a href='#story_generation_get_image'>6.2.2. Get the Related Image</a>
-              * <a href='#story_generation_get_image_from_index'>6.2.2.1. Retrieve from Image Index</a>
-              * <a href='#story_generation_get_image_from_example'>6.2.2.2. Directly Load Image</a>
-         * <a href='#story_generation_magic_search_result'>6.2.3. Visually Grounded Story Generation with Magic Search</a>
+         * <a href='#story_generation_CLIP'>6.2.2. Load CLIP</a>
+         * <a href='#story_generation_get_image'>6.3.2. Get the Related Image</a>
+              * <a href='#story_generation_get_image_from_index'>6.3.2.1. Retrieve from Image Index</a>
+              * <a href='#story_generation_get_image_from_example'>6.3.2.2. Directly Load Image</a>
+         * <a href='#story_generation_magic_search_result'>6.3.3. Visually Grounded Story Generation with Magic Search</a>
 * <a href='#contact'>7. Contact</a>
 
 ****
@@ -215,26 +216,31 @@ title_id_list = tokenizer.convert_tokens_to_ids(title_tokens)
 title_ids = torch.LongTensor(title_id_list).view(1,-1)
 ```
 
-<span id='story_generation_get_image'/>
+<span id='story_generation_CLIP'/>
 
-##### 6.2.2. Get the Related Image: 
-Next, let's get the images that are related to the story tile. We provide **two** ways of doing it as shown below:
+##### 6.2.2. Load CLIP: 
 
-<span id='story_generation_get_image_from_index'/>
-
-###### 6.2.2.1. Retrieve from Image Index: 
-The first way is to retrieve the images from a constructed image index. Before running the following commands, please make sure you have built the image index from scrath as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index#1-build-image-index-from-scratch) or downloaded our provided image index as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/data#1-prepare-image-index).
-
-After the image index is ready, we can load the image index as
+Then, we load the CLIP model as:
 ```python
-# load CLIP
 import sys
 sys.path.append(r'./story_generation/clip')
 from clip import CLIP
 model_name = "openai/clip-vit-base-patch32"
 clip = CLIP(model_name)
 clip.eval()
+```
+<span id='story_generation_get_image'/>
 
+##### 6.3.2. Get the Related Image: 
+Next, let's get the images that are related to the story tile. We provide **two** ways of doing it as shown below:
+
+<span id='story_generation_get_image_from_index'/>
+
+###### 6.3.2.1. Retrieve from Image Index: 
+The first way is to retrieve the images from a constructed image index. Before running the following commands, please make sure you have built the image index from scrath as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index#1-build-image-index-from-scratch) or downloaded our provided image index as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/data#1-prepare-image-index).
+
+After the image index is ready, we can load the image index as
+```python
 # build image index
 import sys
 sys.path.append(r'./story_generation/image_index')
@@ -278,7 +284,7 @@ display(image_instance_list[2])
 
 <span id='story_generation_get_image_from_example'/>
 
-###### 6.2.2.2. Directly Load Image: 
+###### 6.3.2.2. Directly Load Image: 
 Alternatively, if you have not prepared the image index, we have provided these three images in the repo. You can directly load them as
 ```python
 from PIL import Image
@@ -292,7 +298,7 @@ for name in image_name_list:
 
 <span id='story_generation_magic_search_result'/>
 
-##### 6.2.3. Visually Grounded Story Generation with Magic Search: 
+##### 6.3.3. Visually Grounded Story Generation with Magic Search: 
 **[Note]** Recall that, in this example, our story title is 'The Girls <|endoftext|>'.
 
 Now, let's generate the story conditioned on the top-1 image
