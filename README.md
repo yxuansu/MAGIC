@@ -267,6 +267,12 @@ display(image_instance_list[1])
 ```
 <img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/tumblr_mg8efpjTB71rm9r1xo1_1280.jpg" width="280" height="280">
 
+```python
+# display the top-3 image
+display(image_instance_list[1])
+```
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="280" height="280">
+
 
 
 <span id='story_generation_get_image_from_example'/>
