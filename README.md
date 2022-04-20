@@ -256,11 +256,16 @@ image_name_list, image_instance_list = index.search_image(title, top_k=3)
 Let's see the top-3 images we got
 ```python
 from IPython.display import display
+# display the top-1 image
 display(image_instance_list[0])
 ```
 <img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="280" height="280">
 
-
+```python
+# display the top-2 image
+display(image_instance_list[1])
+```
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/tumblr_mg8efpjTB71rm9r1xo1_1280.jpg" width="280" height="280">
 
 
 
