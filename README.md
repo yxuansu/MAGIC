@@ -269,7 +269,7 @@ display(image_instance_list[1])
 
 ```python
 # display the top-3 image
-display(image_instance_list[1])
+display(image_instance_list[2])
 ```
 <img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="280" height="280">
 
