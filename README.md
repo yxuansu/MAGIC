@@ -364,6 +364,9 @@ display(image_instance)
 ```
 <img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="280" height="320">
 
+
+**[Note]** If you are looking for a python file that runs the above examples, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/story_generation_demo.py) to see the results.
+
 ****
 
 <span id='contact'/>
