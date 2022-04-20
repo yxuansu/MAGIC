@@ -38,8 +38,7 @@ This directory contains the results of all evaluated methods for the image capti
         ├── nucleus_result_run_1.json # first run of nucleus sampling 
         ├── nucleus_result_run_2.json # second run of nucleus sampling
         ├── nucleus_result_run_3.json # third run of nucleus sampling 
-        ├── source_flickr30k_target_mscoco_clip_retrieval.json # CLIPRe 
-        └──  # ZeroCap 
+        └── source_flickr30k_target_mscoco_clip_retrieval.json # CLIPRe 
     ├── ./mscoco_model_to_flickr30k/ # results of cross domain image captioning on Flickr30k benchmark
         ├── magic_result.json # The result of our magic approach 
         ├── contrastive_result.json # contrastive search 
@@ -49,8 +48,7 @@ This directory contains the results of all evaluated methods for the image capti
         ├── nucleus_result_run_1.json # first run of nucleus sampling 
         ├── nucleus_result_run_2.json # second run of nucleus sampling
         ├── nucleus_result_run_3.json # third run of nucleus sampling 
-        ├── source_mscoco_target_flickr30k_clip_retrieval.json # CLIPRe 
-        └──  # ZeroCap 
+        └── source_mscoco_target_flickr30k_clip_retrieval.json # CLIPRe 
 
 ### 2. Data Format of the Inferenced Result:
 
