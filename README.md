@@ -135,7 +135,7 @@ image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000182784.j
                    'COCO_val2014_000000348905.jpg', 'COCO_val2014_000000545385.jpg', 'COCO_val2014_000000210032.jpg', 'COCO_val2014_000000577526.jpg']
 index = 1 
 '''
-   you can reproduce all results shown in our case study (index from 0 to 3) 
+   you can easily reproduce all results shown in our case study (index from 0 to 3) 
    and the results in the appendix (index from 4 to 11).
 '''
 
