@@ -130,9 +130,9 @@ To generate the caption of a random image, we need to load the image as:
 ```python
 from PIL import Image             # to load images
 from IPython.display import display # to display images
-image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000182784.jpg', 
-                   'COCO_val2014_000000299319.jpg', 'COCO_val2014_000000516750.jpg']
-index = 1 # you can reproduce all results shown in our case study by changing the index.
+image_name_list = ['COCO_val2014_000000336777.jpg', 'COCO_val2014_000000182784.jpg', 'COCO_val2014_000000299319.jpg', 'COCO_val2014_000000516750.jpg',
+                   'COCO_val2014_000000261779']
+index = 1 # you can reproduce all results shown in our case study by changing the index from 0 to 3.
 image_path = r'./image_captioning/example_images/' + image_name_list[index]
 image_instance = Image.open(image_path)
 display(image_instance)
