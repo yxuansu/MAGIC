@@ -28,7 +28,7 @@ This directory contains the results of all evaluated methods for the image capti
             ├── nucleus_result_run_2.json # second run of nucleus sampling 
             ├── nucleus_result_run_3.json # third run of nucleus sampling 
             ├── flickr30k_in_domain_clipretrieval.json # CLIPRe 
-            └── zerocap_result.json # ZeroCap baseline       
+            └── zerocap_result.json # ZeroCap
     ├── ./flickr30k_model_to_mscoco/ # results of cross domain image captioning on MSCOCO benchmark
         ├── magic_result.json # The result of our magic approach 
         ├── contrastive_result.json # contrastive search 
