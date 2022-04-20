@@ -214,7 +214,6 @@ title_id_list = tokenizer.convert_tokens_to_ids(title_tokens)
 title_ids = torch.LongTensor(title_id_list).view(1,-1)
 ```
 
-
 <span id='story_generation_get_image'/>
 
 ##### 6.2.2. Get the Related Image: 
@@ -245,10 +244,25 @@ image_folder_prefix_path = r'./story_generation/data/image_index/images/'
 index = ImageIndex(index_path, mapping_dict_path, image_folder_prefix_path, clip)
 ```
 
+Then, we can retrieve the top-3 images as
+```python
+image_name_list, image_instance_list = index.search_image(title, top_k=3)
+'''
+   image_name_list: the list of names of the retrieved images
+   image_instance_list: the list of images that we retrieve
+'''
+```
+
+Let's see what images we got
+```python
+from IPython.display import display
+display(image_instance_list[0])
+```
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="400" height="280">
 
 
 
-and retrieve the related images as
+
 
 <span id='story_generation_get_image_from_example'/>
 
