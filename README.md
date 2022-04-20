@@ -253,12 +253,12 @@ image_name_list, image_instance_list = index.search_image(title, top_k=3)
 '''
 ```
 
-Let's see what images we got
+Let's see the top-3 images we got
 ```python
 from IPython.display import display
 display(image_instance_list[0])
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="400" height="280">
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="380" height="380">
 
 
 
