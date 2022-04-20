@@ -19,6 +19,9 @@
     * <a href='#story_generation_experiment'>6.1. Implementation of Experiments</a>
     * <a href='#story_generation_magic_search'>6.2. Example Usage of Magic Search</a>
          * <a href='#story_generation_language_model'>6.2.1. Load Language Model</a>
+         * <a href='#story_generation_get_image'>6.2.2. Get the Related Image</a>
+              * <a href='#story_generation_get_image_from_index'>6.2.2.1. Retrieve from Image Index</a>
+              * <a href='#story_generation_get_image_from_example'>6.2.2.2. Directly Load Image</a>
 * <a href='#contact'>7. Contact</a>
 
 ****
