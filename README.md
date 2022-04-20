@@ -223,6 +223,7 @@ Next, let's get the images that are related to the story tile. We provide **two*
 <span id='story_generation_get_image_from_index'/>
 
 ###### 6.2.2.1. Retrieve from Image Index: 
+The first way is to retrieve the images from a constructed image index. Before running the following commands, please make sure you have built the image index from scrath as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/image_index#1-build-image-index-from-scratch) or downloaded our provided image index as described [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/data#1-prepare-image-index).
 
 <span id='story_generation_get_image_from_example'/>
 
