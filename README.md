@@ -305,6 +305,9 @@ Now, let's generate the story conditioned on the top-1 image
 ```python
 from IPython.display import display
 k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
+'''
+   The k, alpha, beta correspond to the k, alpha, beta in magic search
+'''
 image_instance = image_instance_list[0]
 eos_token = r'<|endoftext|>'
 output, _ = generation_model.magic_search(title_ids, k, alpha, decoding_len, beta, image_instance, 
@@ -323,6 +326,9 @@ display(image_instance)
 Then, let's generate the story conditioned on the top-2 image
 ```python
 k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
+'''
+   The k, alpha, beta correspond to the k, alpha, beta in magic search
+'''
 image_instance = image_instance_list[1]
 eos_token = r'<|endoftext|>'
 output, _ = generation_model.magic_search(title_ids, k, alpha, decoding_len, beta, image_instance, 
@@ -341,6 +347,9 @@ display(image_instance)
 Lastly, let's generate the story conditioned on the top-3 image
 ```python
 k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
+'''
+   The k, alpha, beta correspond to the k, alpha, beta in magic search
+'''
 image_instance = image_instance_list[2]
 eos_token = r'<|endoftext|>'
 output, _ = generation_model.magic_search(title_ids, k, alpha, decoding_len, beta, image_instance, 
