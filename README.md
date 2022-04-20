@@ -16,6 +16,9 @@
          * <a href='#image_captioning_load_image'>5.2.4. Load Image</a>
          * <a href='#image_captioning_magic_search_result'>5.2.5. Zero-Shot Image Captioning with Magic Search</a>
 * <a href='#story_generation'>6. Visually Grounded Story Generation</a>
+    * <a href='#story_generation_experiment'>6.1. Implementation of Experiments</a>
+    * <a href='#story_generation_magic_search'>6.2. Example Usage of Magic Search</a>
+         * <a href='#story_generation_language_model'>6.2.1. Load Language Model</a>
 * <a href='#contact'>7. Contact</a>
 
 ****
@@ -170,6 +173,19 @@ print (output)
 ```
 
 **[Note]** If you are looking for a python file that runs the above example, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/image_caption_demo.py) to see the results.
+
+****
+
+<span id='story_generation'/>
+
+### 6. Visually Grounded Story Generation:
+
+<span id='story_generation_experiment'/>
+
+#### 6.1. Implementation of Experiments: 
+
+
+
 
 ****
 
