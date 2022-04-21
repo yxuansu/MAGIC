@@ -45,7 +45,7 @@ To perform inference with our magic approach, please refer to details [[here]](h
 <span id='contrastive_search'/>
 
 #### 4.1. Contrastive Search:
-To perform inference with the contrastive search baseline, please refer to details [[here](https://github.com/yxuansu/MAGIC/tree/main/story_generation/sh_folder#2-contrastive-search).
+To perform inference with the contrastive search baseline, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/sh_folder#2-contrastive-search).
 
 
 <span id='greedy_search'/>
