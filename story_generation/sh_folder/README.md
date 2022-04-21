@@ -44,6 +44,8 @@ Here, the arguments are as follows:
 * `--beta`: The beta in magic search. 
 * `--save_path_prefix`: Where to save the inferenced result. 
 
+**[Note]** We provide our inferenced result with magic search [[here]](https://github.com/yxuansu/MAGIC/blob/main/story_generation/inference_result/)
+
 ****
 
 <span id='contrastive_search'/>
