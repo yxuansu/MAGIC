@@ -6,12 +6,11 @@ In this folder, we illustrate how to conduct inference with different methods.
 ### Catalogue:
 * <a href='#magic_search'>1. Magic Search</a>
 * <a href='#contrastive_search'>2. Contrastive Search</a>
-* <a href='#topk_sampling'>3. Top-k Sampling</a>
-    * <a href='#in_domain_topk_sampling'>3.1. In Domain Experiment</a>
-    * <a href='#cross_domain_topk_sampling'>3.2. Cross Domain Experiment</a>
-* <a href='#nucleus_sampling'>4. Nucleus Sampling</a>
-    * <a href='#in_domain_nucleus_sampling'>4.1. In Domain Experiment</a>
-    * <a href='#cross_domain_nucleus_sampling'>4.2. Cross Domain Experiment</a>
+* <a href='#greedy_search'>3. Greedy Search</a>
+* <a href='#beam_search'>4. Beam Search</a>
+* <a href='#topk_sampling'>5. Top-k Sampling</a>
+* <a href='#nucleus_sampling'>6. Nucleus Sampling</a>
+* <a href='#typical_sampling'>7. Typical Sampling</a>
 
 ****
 
@@ -68,6 +67,51 @@ Here, the arguments are as follows:
 * `--save_path_prefix`: Where to save the inferenced result. 
 
 **[Note]** We provide our inferenced result with contrastive search [[here]](https://github.com/yxuansu/MAGIC/blob/main/story_generation/inference_result/).
+
+
+****
+
+<span id='greedy_search'/>
+
+### 3. Greedy Search:
+To perform inference with greedy search, please run the following command:
+```yaml
+chmod +x ./greedy_search.sh
+./greedy_search.sh
+```
+Here, the arguments are as follows:
+* `--language_model_code_path`: Where the code of language model locates. 
+* `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
+* `--test_path`: The file that stores the reference captions. 
+* `--num_of_inference_instances`: How many instances to perform inference.
+* `--number_of_instance_to_generate_per_method`: How many results we generate per instance.
+* `--decoding_len`: The number of tokens to generate. 
+* `--decoding_method`: greedy 
+* `--save_path_prefix`: Where to save the inferenced result. 
+
+
+****
+
+<span id='beam_search'/>
+
+### 4. Beam Search:
+To perform inference with beam search, please run the following command:
+```yaml
+chmod +x ./beam_search.sh
+./beam_search.sh
+```
+Here, the arguments are as follows:
+* `--language_model_code_path`: Where the code of language model locates. 
+* `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
+* `--test_path`: The file that stores the reference captions. 
+* `--num_of_inference_instances`: How many instances to perform inference.
+* `--number_of_instance_to_generate_per_method`: How many results we generate per instance.
+* `--decoding_len`: The number of tokens to generate. 
+* `--decoding_method`: beam
+* `--beam_width`: The beam width for beam search.
+* `--save_path_prefix`: Where to save the inferenced result. 
+
+
 
 ****
 
