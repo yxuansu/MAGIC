@@ -210,7 +210,7 @@ generation_model = SimCTG(language_model_name, tokenizer.pad_token_id)
 generation_model.eval()
 
 import torch
-title = 'The Girls <|endoftext|>'
+title = 'Ice Cream Tasting <|endoftext|>'
 title_tokens = tokenizer.tokenize(title)
 title_id_list = tokenizer.convert_tokens_to_ids(title_tokens)
 title_ids = torch.LongTensor(title_id_list).view(1,-1)
@@ -251,35 +251,22 @@ image_folder_prefix_path = r'./story_generation/data/image_index/images/'
 index = ImageIndex(index_path, mapping_dict_path, image_folder_prefix_path, clip)
 ```
 
-Then, we can retrieve the top-3 images as
+Then, we can retrieve the top-1 images as
 ```python
-image_name_list, image_instance_list = index.search_image(title, top_k=3)
+image_name_list, image_instance_list = index.search_image(title, top_k=1)
 '''
    image_name_list: the list of names of the retrieved images
    image_instance_list: the list of images that we retrieve
 '''
 ```
 
-Let's see the top-3 images we got
+Let's see the retrieved images we got
 ```python
 from IPython.display import display
 # display the top-1 image
 display(image_instance_list[0])
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="280" height="280">
-
-```python
-# display the top-2 image
-display(image_instance_list[1])
-```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/tumblr_mg8efpjTB71rm9r1xo1_1280.jpg" width="250" height="280">
-
-```python
-# display the top-3 image
-display(image_instance_list[2])
-```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="280" height="320">
-
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/avopix-284658167.jpg" width="360" height="280">
 
 
 <span id='story_generation_get_image_from_example'/>
@@ -288,7 +275,7 @@ display(image_instance_list[2])
 Alternatively, if you have not prepared the image index, we have provided these three images in the repo. You can directly load them as
 ```python
 from PIL import Image
-image_name_list = ['0b85a432e15c45bd55c3e83063e819c9.jpg', 'tumblr_mg8efpjTB71rm9r1xo1_1280.jpg','08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg']
+image_name_list = ['avopix-284658167.jpg']
 image_instance_list = []
 for name in image_name_list:
     image_path = r'./story_generation/example_images/' + name
@@ -301,7 +288,7 @@ for name in image_name_list:
 ##### 6.3.3. Visually Grounded Story Generation with Magic Search: 
 **[Note]** Recall that, in this example, our story title is 'The Girls <|endoftext|>'.
 
-Now, let's generate the story conditioned on the top-1 image
+Now, let's generate the story conditioned on the retrieved image
 ```python
 from IPython.display import display
 k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
@@ -342,7 +329,7 @@ display(image_instance)
    to see their friends again next year in real life.
 '''
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/tumblr_mg8efpjTB71rm9r1xo1_1280.jpg" width="250" height="280">
+
 
 Lastly, let's generate the story conditioned on the top-3 image
 ```python
@@ -362,7 +349,7 @@ display(image_instance)
    It was hard for them to get good at anything. They decided to disband the band in the fall.
 '''
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/08a1df49b955c4522498e08ba2adc503--super-cute-dresses-simple-dresses.jpg" width="280" height="320">
+
 
 
 **[Note]** If you are looking for a python file that runs the above examples, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/story_generation_demo.py) to see the results.
