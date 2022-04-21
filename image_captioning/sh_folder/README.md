@@ -74,7 +74,7 @@ The arguments are the same as in section 1.1.
 
 #### 2.1. In Domain Experiment:
 
-To perform in domain experiment with magic search, please run the following command:
+To perform in domain experiment with contrastive search, please run the following command:
 ```yaml
 chmod +x ./X_contrastive_baseline.sh
 ./X_contrastive_baseline.sh
@@ -96,7 +96,7 @@ Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
 
 #### 2.2. Cross Domain Experiment:
 
-To perform cross domian experiment with magic search, please run the following command:
+To perform cross domian experiment with contrastive search, please run the following command:
 ```yaml
 chmod +x ./source_X_target_Y_contrastive_baseline.sh
 ./source_X_target_Y_contrastive_baseline.sh
