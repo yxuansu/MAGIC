@@ -147,48 +147,6 @@ class SimCTG(nn.Module):
         execution_time = time_diff.total_seconds() * 1000
         return input_ids_for_class[0], prefix_len
 
-    def ablation_search(self, input_ids, beam_width, alpha, decoding_len, beta, prompt, clip, 
-        clip_text_max_len, eos_token):#, add_token_level_score=False):
-        prefix_len = input_ids.size()[1]
-        from utlis import PlugAndPlayContrastiveDecodingOneStepFast, parse_prompt
-        past_key_values, last_hidden_states, logits = None, None, None
-        generated = [item for item in input_ids.tolist()]
-        input_ids_for_class = input_ids.clone()
-
-        prompt = parse_prompt(prompt)
-        prompt_embeds = clip.compute_text_representation([prompt])
-
-        start_time = datetime.datetime.now()
-
-        # the maximum supported length of generation for SimCTG is 256
-        # to support longer generated length, you can re-train the SimCTG model with longer sequences
-        decoding_len = decoding_len - prefix_len
-
-        for step in range(decoding_len):
-            input_ids, past_key_values, last_hidden_states, logits, input_ids_for_class = \
-            PlugAndPlayContrastiveDecodingOneStepFast(
-                self.model, 
-                input_ids, 
-                prefix_len,
-                beam_width, 
-                alpha, 
-                beta, 
-                self.tokenizer,
-                prompt_embeds, 
-                clip, 
-                clip_text_max_len,
-                past_key_values,
-                last_hidden_states,
-                logits,
-                first_step=step==0,
-                input_ids_for_class=input_ids_for_class,
-                #add_token_level_score=add_token_level_score,
-            )
-        end_time = datetime.datetime.now()
-        time_diff = (end_time - start_time)
-        execution_time = time_diff.total_seconds() * 1000
-        return input_ids_for_class[0], prefix_len
-
     def fast_contrastive_search(self, input_ids, beam_width, alpha, decoding_len, eos_token):
         '''
            input_ids: prefix input; 1 x prefix_len
