@@ -1,6 +1,6 @@
 ## Details of How to Run the Inference Code
 
-In this folder, we illustrate how to conduct inference with different methods.
+Here, we illustrate how to conduct inference with different methods.
 
 ****
 ### Catalogue:
@@ -140,7 +140,7 @@ Here, the arguments are as follows:
 <span id='nucleus_sampling'/>
 
 ### 6. Nucleus Sampling:
-To perform inference  with nucleus sampling, please run the following command:
+To perform inference with nucleus sampling, please run the following command:
 ```yaml
 chmod +x ./nucleus_sampling.sh
 ./nucleus_sampling.sh
@@ -156,4 +156,29 @@ Here, the arguments are as follows:
 * `--nucleus_p`: The p in nucleus sampling
 * `--save_path_prefix`: Where to save the inferenced result. 
 
+
+****
+
+<span id='typical_sampling'/>
+
+### 7. Typical Sampling:
+To perform inference with typical sampling, we need to first **upgrade** the torch version as
+```yaml
+pip install torch==1.11
+```
+Then, please run the following command:
+```yaml
+chmod +x ./typical_sampling.sh
+./typical_sampling.sh
+```
+Here, the arguments are as follows:
+* `--language_model_code_path`: Where the code of language model locates. 
+* `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
+* `--test_path`: The file that stores the reference captions. 
+* `--num_of_inference_instances`: How many instances to perform inference.
+* `--number_of_instance_to_generate_per_method`: How many results we generate per instance.
+* `--decoding_len`: The number of tokens to generate. 
+* `--decoding_method`: typical
+* `--typical_mass`: The mass in typical sampling.
+* `--save_path_prefix`: Where to save the inferenced result. 
 
