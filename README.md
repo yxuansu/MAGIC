@@ -15,6 +15,7 @@
          * <a href='#image_captioning_start_token'>5.2.3. Prepare Start Token</a>
          * <a href='#image_captioning_load_image'>5.2.4. Load Image</a>
          * <a href='#image_captioning_magic_search_result'>5.2.5. Zero-Shot Image Captioning with Magic Search</a>
+         * <a href='#image_captioning_reproduce_result'>5.2.6. Reproduce Our Results in the Paper</a>
 * <a href='#story_generation'>6. Visually Grounded Story Generation</a>
     * <a href='#story_generation_experiment'>6.1. Implementation of Experiments</a>
     * <a href='#story_generation_magic_search'>6.2. Example Usage of Magic Search</a>
@@ -178,7 +179,14 @@ print (output)
 '''
 ```
 
-**[Note]** If you are looking for a python file that runs the above example, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/image_caption_demo.py) to see the results.
+<span id='image_captioning_reproduce_result'/>
+
+##### 5.2.6. Reproduce Our Results in the Paper: 
+If you would like to reproduce all the results shown in the case study and appendix of our paper, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/image_caption_demo.py) as
+
+```yaml
+python image_caption_demo.py
+```
 
 ****
 
