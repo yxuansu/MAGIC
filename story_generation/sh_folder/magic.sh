@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=0 python ../inference_magic.py\
+    --language_model_code_path ../language_model/\
+    --language_model_name cambridgeltl/simctg_rocstories\
+    --image_index_code_path ../image_index/\
+    --clip_path ../clip/\
+    --clip_name openai/clip-vit-base-patch32\
+    --image_index_matrix_path ../data/image_index/images_index_data/index_matrix.txt\
+    --image_mapping_dict_path ../data/image_index/images_index_data/mapping_dict.json\
+    --image_folder_prefix_path ../data/image_index/images/\
+    --test_path ../data/rocstories_test.txt\
+    --num_of_inference_instances 1500\
+    --decoding_len 100\
+    --number_of_instance_to_generate_per_method 3\
+    --k 5\
+    --alpha 0.6\
+    --beta 0.15\
+    --save_path_prefix ../inference_result/
