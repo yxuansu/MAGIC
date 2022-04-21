@@ -197,7 +197,7 @@ python image_caption_demo.py
 <span id='story_generation_experiment'/>
 
 #### 6.1. Implementation of Experiments: 
-
+To ensure the reproductity of our work, we provide all related resources to implement our experiments on the task of visually grounded story generation. Please refer more details [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation). 
 
 <span id='story_generation_magic_search'/>
 
