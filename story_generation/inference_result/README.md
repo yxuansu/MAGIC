@@ -1,6 +1,7 @@
 ## Data Format of the Inferenced Results
 
 1. Magic Search:
+2. 
 The inferenced file from magic search is a list of dictionary, where the data format of each dictionary is:
 ```yaml
 {  
