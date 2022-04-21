@@ -24,6 +24,7 @@
               * <a href='#story_generation_get_image_from_index'>6.3.2.1. Retrieve from Image Index</a>
               * <a href='#story_generation_get_image_from_example'>6.3.2.2. Directly Load Image</a>
          * <a href='#story_generation_magic_search_result'>6.3.3. Visually Grounded Story Generation with Magic Search</a>
+         * <a href='#story_generation_reproduce_result'>6.3.4. Reproduce Our Results in the Paper</a>
 * <a href='#contact'>7. Contact</a>
 
 ****
@@ -229,6 +230,7 @@ model_name = "openai/clip-vit-base-patch32"
 clip = CLIP(model_name)
 clip.eval()
 ```
+
 <span id='story_generation_get_image'/>
 
 ##### 6.3.2. Get the Related Image: 
@@ -326,8 +328,15 @@ print (generated_story)
 '''
 ```
 
+<span id='story_generation_reproduce_result'/>
 
-**[Note]** If you are looking for a python file that runs the above examples, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/story_generation_demo.py) to see the results.
+##### 6.3.4. Reproduce Our Results in the Paper: 
+If you would like to reproduce all the results shown in the case study and appendix of our paper, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/story_generation_demo.py) as
+
+```yaml
+python story_generation_demo.py
+```
+
 
 ****
 
