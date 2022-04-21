@@ -286,7 +286,7 @@ for name in image_name_list:
 <span id='story_generation_magic_search_result'/>
 
 ##### 6.3.3. Visually Grounded Story Generation with Magic Search: 
-**[Note]** Recall that, in this example, our story title is 'The Girls <|endoftext|>'.
+**[Note]** Recall that, in this example, our story title is 'Ice Cream Tasting <|endoftext|>'.
 
 Now, let's generate the story conditioned on the retrieved image
 ```python
@@ -303,54 +303,12 @@ _, generated_story = generation_model.parse_generated_result(output, num_of_sent
 print (generated_story)
 display(image_instance)
 '''
-   A group of girls went to the bar. They wanted to meet up with their friends. The girls were shy 
-   and didn't know each other. When they got there, they started talking. They ended up meeting up 
-   at the club and had a great time.
+   My family went to a ice cream shop. They ordered three flavors of ice cream. The first one was 
+   strawberry, the second was chocolate, and the third was orange. I was excited to try all three 
+   flavors. It was very good and I had a great time at the ice cream shop.
 '''
 ```
-<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/0b85a432e15c45bd55c3e83063e819c9.jpg" width="280" height="280">
-
-Then, let's generate the story conditioned on the top-2 image
-```python
-k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
-'''
-   The k, alpha, beta correspond to the k, alpha, beta in magic search
-'''
-image_instance = image_instance_list[1]
-eos_token = r'<|endoftext|>'
-output, _ = generation_model.magic_search(title_ids, k, alpha, decoding_len, beta, image_instance, 
-        clip, 60, eos_token)
-_, generated_story = generation_model.parse_generated_result(output, num_of_sentences_to_keep=5)
-print (generated_story)
-display(image_instance)
-'''
-   The girls were excited to go to prom. They had a lot of friends and wanted to impress them. 
-   They dressed as their favorite girl. The prom was over and they went home. They couldn't wait 
-   to see their friends again next year in real life.
-'''
-```
-
-
-Lastly, let's generate the story conditioned on the top-3 image
-```python
-k, alpha, beta, decoding_len  = 5, 0.6, 0.15, 100
-'''
-   The k, alpha, beta correspond to the k, alpha, beta in magic search
-'''
-image_instance = image_instance_list[2]
-eos_token = r'<|endoftext|>'
-output, _ = generation_model.magic_search(title_ids, k, alpha, decoding_len, beta, image_instance, 
-        clip, 60, eos_token)
-_, generated_story = generation_model.parse_generated_result(output, num_of_sentences_to_keep=5)
-print (generated_story)
-display(image_instance)
-'''
-   The girls were in a band. They wanted to play in front of their friends. They practiced every day.
-   It was hard for them to get good at anything. They decided to disband the band in the fall.
-'''
-```
-
-
+<img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/avopix-284658167.jpg" width="360" height="280">
 
 **[Note]** If you are looking for a python file that runs the above examples, you can run this demo [file](https://github.com/yxuansu/MAGIC/blob/main/story_generation_demo.py) to see the results.
 
