@@ -272,7 +272,7 @@ display(image_instance_list[0])
 <span id='story_generation_get_image_from_example'/>
 
 ###### 6.3.2.2. Directly Load Image: 
-Alternatively, if you have not prepared the image index, we have provided these three images in the repo. You can directly load them as
+Alternatively, if you have not prepared the image index, we have provided these the image in the repo. You can directly load it as
 ```python
 from PIL import Image
 image_name_list = ['avopix-284658167.jpg']
