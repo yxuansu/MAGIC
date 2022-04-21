@@ -117,83 +117,43 @@ Here, the arguments are as follows:
 
 <span id='topk_sampling'/>
 
-### 3. Top-k Sampling:
-
-<span id='in_domain_topk_sampling'/>
-
-#### 3.1. In Domain Experiment:
-
-To perform in domain experiment with top-k sampling, please run the following command:
+### 5. Top-k Sampling:
+To perform inference with top-k sampling, please run the following command:
 ```yaml
-chmod +x ./X_topk_baseline.sh
-./X_topk_baseline.sh
+chmod +x ./top_k_sampling.sh
+./top_k_sampling.sh
 ```
-Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
+Here, the arguments are as follows:
 * `--language_model_code_path`: Where the code of language model locates. 
 * `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
 * `--test_path`: The file that stores the reference captions. 
-* `--decoding_method`: topk  
+* `--num_of_inference_instances`: How many instances to perform inference.
+* `--number_of_instance_to_generate_per_method`: How many results we generate per instance.
 * `--decoding_len`: The number of tokens to generate. 
-* `--top_k`: The k in top-k sampling. 
+* `--decoding_method`: top-k
+* `--top_k`: The k in top-k sampling.
 * `--save_path_prefix`: Where to save the inferenced result. 
-* `--save_name`: The saved name of the inferenced result. 
 
-**[Note]** For in domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from the same domain.
-
-<span id='cross_domain_topk_sampling'/>
-
-#### 3.2. Cross Domain Experiment:
-
-To perform cross domian experiment with top-k sampling, please run the following command:
-```yaml
-chmod +x ./source_X_target_Y_topk_baseline.sh
-./source_X_target_Y_topk_baseline.sh
-```
-Here, X is the source domain from ['mscoco', 'flickr30k'] and Y is the target domain from ['flickr30k', 'mscoco']. 
-
-The arguments are the same as in section 3.1.
-
-**[Note]** For cross domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from **different** domains.
 
 ****
 
 <span id='nucleus_sampling'/>
 
-### 4. Nucleus Sampling:
-
-<span id='in_domain_nucleus_sampling'/>
-
-#### 4.1. In Domain Experiment:
-
-To perform in domain experiment with nucleus sampling, please run the following command:
+### 6. Nucleus Sampling:
+To perform inference  with nucleus sampling, please run the following command:
 ```yaml
-chmod +x ./X_nucleus_baseline.sh
-./X_nucleus_baseline.sh
+chmod +x ./nucleus_sampling.sh
+./nucleus_sampling.sh
 ```
-Here, X is in ['mscoco', 'flickr30k'] and the arguments are as follows:
+Here, the arguments are as follows:
 * `--language_model_code_path`: Where the code of language model locates. 
 * `--language_model_name`: The language model name on huggingface (cambridgeltl/magic_mscoco or cambridgeltl/magic_flickr30k) 
 * `--test_path`: The file that stores the reference captions. 
-* `--decoding_method`: nucleus
+* `--num_of_inference_instances`: How many instances to perform inference.
+* `--number_of_instance_to_generate_per_method`: How many results we generate per instance.
 * `--decoding_len`: The number of tokens to generate. 
-* `--nucleus_p`: The p in nucleus sampling. 
+* `--decoding_method`: nucleus
+* `--nucleus_p`: The p in nucleus sampling
 * `--save_path_prefix`: Where to save the inferenced result. 
-* `--save_name`: The saved name of the inferenced result. 
 
-**[Note]** For in domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from the same domain.
-
-<span id='cross_domain_nucleus_sampling'/>
-
-#### 4.2. Cross Domain Experiment:
-
-To perform cross domian experiment with nucleus sampling, please run the following command:
-```yaml
-chmod +x ./source_X_target_Y_nucleus_baseline.sh
-./source_X_target_Y_nucleus_baseline.sh
-```
-Here, X is the source domain from ['mscoco', 'flickr30k'] and Y is the target domain from ['flickr30k', 'mscoco']. 
-
-The arguments are the same as in section 4.1.
-
-**[Note]** For cross domain experiments, the test set and the language model (defined by the argument of language_model_name) should come from **different** domains.
 
