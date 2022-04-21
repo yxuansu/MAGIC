@@ -30,14 +30,12 @@ To prepare the data and image index for the task, please follow instructions [[h
 ### 2. Language Model Training:
 To train the language model on the ROCStories benchmark, please follow the instructions [[here]](https://github.com/yxuansu/SimCTG/tree/main/story_generation#2-open-ended-story-generation-on-rocstories-benchmark).
 
-<span id='mscoco_adaptation'/>
-
 ****
 
 <span id='inference_with_magic'/>
 
 ### 3. Perform Inference with Magic:
-To perform inference with our magic approach, please refer to details [[here]](https://github.com/yxuansu/MAGIC/tree/main/image_captioning/sh_folder#1-magic-search).
+To perform inference with our magic approach, please refer to details [[here]](https://github.com/yxuansu/MAGIC#62-example-usage-of-magic-search) and [[here]](https://github.com/yxuansu/MAGIC/tree/main/story_generation/sh_folder#1-magic-search).
 
 ****
 
