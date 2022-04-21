@@ -11,7 +11,7 @@ The inferenced file from magic search is a list of dictionary, where the data fo
             {
               "image_name": The file name of the retrieved image.
               "generated_continuation_text": The generated result from magic search.
-              "generated_full_text": The story title + the generated result
+              "generated_full_text": The story title + the generated result.
             },
         ...
    }
@@ -19,3 +19,16 @@ The inferenced file from magic search is a list of dictionary, where the data fo
 ```
 
 ### 2. Contrastive Search:
+The inferenced file from contrastive search is a list of dictionary, where the data format of each dictionary is:
+```yaml
+{  
+   "prefix_text": The story title.
+   "reference_continuation_text": The human-written story.
+   "generated_result": {
+        "0": {
+              "generated_continuation_text": The generated result from magic search.
+              "generated_full_text": The story title + the generated result.
+            }
+   }
+}
+```
