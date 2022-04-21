@@ -310,7 +310,7 @@ display(image_instance)
 ```
 <img src="https://github.com/yxuansu/MAGIC/blob/main/story_generation/example_images/avopix-284658167.jpg" width="360" height="280">
 
-Then, let's generate the result using the vanilla contrastive search without the image grounding
+Then, let's see what we can get using the vanilla contrastive search **without** the image grounding.
 ```python
 k, alpha, decoding_len  = 5, 0.6, 100
 '''
@@ -320,7 +320,6 @@ eos_token = r'<|endoftext|>'
 output, _ = generation_model.fast_contrastive_search(title_ids, k, alpha, decoding_len, eos_token)
 _, generated_story = generation_model.parse_generated_result(output, num_of_sentences_to_keep=5)
 print (generated_story)
-display(image_instance)
 '''
    My family went to a ice cream shop. We ordered the Ice Cream Truck. It was delicious. The customer 
    service was terrible. We had to leave for another day.
