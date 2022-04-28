@@ -39,7 +39,7 @@ Generative language models (LMs) such as GPT-2/3 can be prompted to generate tex
 <span id='news'/>
 
 ### 2. News:
-
+* [2022/05/] MAGIC is publicly released!
 ****
 
 <span id='citation'/>
