@@ -59,12 +59,7 @@ If you find our paper and resources useful, please kindly leave a star and cite 
   journal   = {CoRR},
   volume    = {abs/2202.06417},
   year      = {2022},
-  url       = {https://arxiv.org/abs/2202.06417},
-  eprinttype = {arXiv},
-  eprint    = {2202.06417},
-  timestamp = {Fri, 18 Feb 2022 12:23:53 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2202-06417.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  eprinttype = {arXiv}
 }
 ```
 
