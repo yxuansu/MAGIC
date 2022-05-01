@@ -27,7 +27,7 @@ print ('CLIP loaded.')
     The first two instances correspond to our case study in the main content of the paper.
     The rest of the instances correspond to our case study in the appendix.
 '''
-title_list = ['Ice Cream Tasting <|endoftext|>', 'Rainstorm <|endoftext|>', 'Sand Volleyball <|endoftext|>', 
+title_list = ['Ice Cream Tasting <|endoftext|>', 'Sand Volleyball <|endoftext|>', 'Rainstorm <|endoftext|>', 
             'French Braid <|endoftext|>', 'The Hair Clump <|endoftext|>', 'Pig <|endoftext|>']
 
 
