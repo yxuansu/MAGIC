@@ -56,6 +56,21 @@ Generative language models (LMs) such as GPT-2/3 can be prompted to generate tex
 If you find our paper and resources useful, please kindly leave a star and cite our papers. Thanks!
 
 ```bibtex
+@article{sumagic2022,
+  author    = {Yixuan Su and
+               Tian Lan and
+               Yahui Liu and
+               Fangyu Liu and
+               Dani Yogatama and
+               Yan Wang and
+               Lingpeng Kong and
+               Nigel Collier},
+  title     = {Language Models Can See: Plugging Visual Controls in Text Generation},
+  journal   = {CoRR},
+  year      = {2022},
+  eprinttype = {arXiv}
+}
+
 @article{DBLP:journals/corr/abs-2202-06417,
   author    = {Yixuan Su and
                Tian Lan and
