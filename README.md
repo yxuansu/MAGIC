@@ -1,6 +1,10 @@
 ## Language Models can See: Plugging Visual Controls in Text Generation
 **Authors**: Yixuan Su, Tian Lan, Yahui Liu, Fangyu Liu, Dani Yogatama, Yan Wang, Lingpeng Kong, and Nigel Collier
 
+
+This repository contains code, models, and other related resources of our paper [Language Models Can See:
+Plugging Visual Controls in Text Generation]().
+
 ****
 
 ![MAGIC](/demo.gif)
