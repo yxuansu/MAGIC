@@ -2,6 +2,10 @@
 **Authors**: Yixuan Su, Tian Lan, Yahui Liu, Fangyu Liu, Dani Yogatama, Yan Wang, Lingpeng Kong, and Nigel Collier
 
 ****
+
+![MAGIC](/demo.gif)
+
+****
 ## Catalogue:
 * <a href='#introduction'>1. Introduction</a>
 * <a href='#news'>2. News</a>
