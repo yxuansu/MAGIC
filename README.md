@@ -17,7 +17,7 @@ Plugging Visual Controls in Text Generation]().
 * <a href='#environment_setup'>4. Environment Setup</a>
 * <a href='#image_captioning'>5. Zero-Shot Image Captioning</a>
     * <a href='#image_captioning_experiment'>5.1. Implementation of Experiments</a>
-    * <a href='#image_captioning_magic_search'>5.2. Example Usage of Magic Search</a> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MhK3cVHW9HQ1ArXu0M_sS_Po0_4N1xgQ?usp=sharing)
+    * <a href='#image_captioning_magic_search'>5.2. Example Usage of Magic Search</a> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NDVkKpanbsaUwecHoRp_2kIpMztOFW25?usp=sharing)
          * <a href='#image_captioning_language_model'>5.2.1. Load Language Model</a>
          * <a href='#image_captioning_CLIP'>5.2.2. Load CLIP</a>
          * <a href='#image_captioning_start_token'>5.2.3. Prepare Start Token</a>
@@ -97,7 +97,7 @@ To ensure the reproductity of our work, we provide all related resources to impl
 #### 5.2. Example Usage of Magic Search: 
 In the following, we illustrate how to perform zero-shot image captioning with magic search. Specifically, we show how to generate the results as shown in our case study in the paper.
 
-[![Open In Colab](https://colab.research.google.com/drive/1NDVkKpanbsaUwecHoRp_2kIpMztOFW25?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NDVkKpanbsaUwecHoRp_2kIpMztOFW25?usp=sharing)
 
 <span id='image_captioning_language_model'/>
 
