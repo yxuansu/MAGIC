@@ -26,7 +26,7 @@ Plugging Visual Controls in Text Generation]().
          * <a href='#image_captioning_reproduce_result'>5.2.6. Reproduce Our Results in the Paper</a>
 * <a href='#story_generation'>6. Visually Grounded Story Generation</a>
     * <a href='#story_generation_experiment'>6.1. Implementation of Experiments</a>
-    * <a href='#story_generation_magic_search'>6.2. Example Usage of Magic Search</a>
+    * <a href='#story_generation_magic_search'>6.2. Example Usage of Magic Search</a> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19lyyMXDRNr-Op8vwUOiRmbhMxI_s3rwW?usp=sharing)
          * <a href='#story_generation_language_model'>6.2.1. Load Language Model</a>
          * <a href='#story_generation_CLIP'>6.2.2. Load CLIP</a>
          * <a href='#story_generation_get_image'>6.3.2. Get the Related Image</a>
@@ -208,6 +208,8 @@ To ensure the reproductity of our work, we provide all related resources to impl
 
 #### 6.2. Example Usage of Magic Search: 
 In the following, we illustrate how to perform visually grounded story generation with magic search. Specifically, we show how to generate the results as shown in our case study in the paper.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19lyyMXDRNr-Op8vwUOiRmbhMxI_s3rwW?usp=sharing)
 
 <span id='story_generation_language_model'/>
 
