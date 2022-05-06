@@ -3,7 +3,7 @@
 
 
 This repository contains code, models, and other related resources of our paper [[Language Models Can See:
-Plugging Visual Controls in Text Generation]]().
+Plugging Visual Controls in Text Generation]](https://arxiv.org/abs/2205.02655).
 
 :star: If you are also interested in open-ended text generation and would like to see more details of our contrastive search decoding method, please refer to our SimCTG [[paper]](https://arxiv.org/abs/2202.06417) and [[repo]](https://github.com/yxuansu/SimCTG). 
 
