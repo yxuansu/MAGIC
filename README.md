@@ -37,6 +37,7 @@ Plugging Visual Controls in Text Generation]](https://arxiv.org/abs/2205.02655).
          * <a href='#story_generation_magic_search_result'>6.3.3. Visually Grounded Story Generation with Magic Search</a>
          * <a href='#story_generation_reproduce_result'>6.3.4. Reproduce Our Results in the Paper</a>
 * <a href='#contact'>7. Contact</a>
+* <a href='#magic_elsewhere'>8. MAGIC Elsewhere</a>
 
 ****
 
@@ -376,4 +377,14 @@ python story_generation_demo.py
 
 ### 7. Contact
 If you have any questions, feel free to contact me via (ys484 at cam.ac.uk).
+
+
+****
+
+<span id='magic_elsewhere'/>
+
+### 8. MAGIC Elsewhere
+We thank the community's effort for extending MAGIC!
+
+- [Replicate](https://replicate.com/home) provides [a great demo](https://replicate.com/yxuansu/magic) of MAGIC that is super easy to use. Thanks for the effort!
 
