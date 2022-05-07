@@ -9,6 +9,11 @@ Plugging Visual Controls in Text Generation]](https://arxiv.org/abs/2205.02655).
 
 ****
 
+### Web demo
+
+Try Replicate web demo for Image Captioning and Story Generation here [![Replicate](https://replicate.com/yxuansu/magic/badge)](https://replicate.com/yxuansu/magic)
+
+
 ![MAGIC](/demo.gif)
 
 ****
