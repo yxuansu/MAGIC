@@ -386,5 +386,5 @@ If you have any questions, feel free to contact me via (ys484 at cam.ac.uk).
 ### 8. MAGIC Elsewhere
 We thank the community's effort for extending MAGIC!
 
-- [Replicate](https://replicate.com/home) provides [a great demo](https://replicate.com/yxuansu/magic) of MAGIC that is super easy to use. Thanks for the effort!
+- [Replicate](https://replicate.com/home) has provided a great [[demo]](https://replicate.com/yxuansu/magic) of MAGIC that is super easy to use. Thanks for the effort!
 
