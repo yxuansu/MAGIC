@@ -7,7 +7,7 @@ Plugging Visual Controls in Text Generation]](https://arxiv.org/abs/2205.02655).
 
 :star: If you are also interested in open-ended text generation and would like to see more details of our contrastive search decoding method, please refer to our SimCTG [[paper]](https://arxiv.org/abs/2202.06417) and [[repo]](https://github.com/yxuansu/SimCTG). 
 
-:star: [Replicate](https://replicate.com/home) has provided a great [[demo]](https://replicate.com/yxuansu/magic/examples) of MAGIC that is super easy to use. Check it out!
+:star: [Replicate](https://replicate.com/home) has provided a great web [[demo]](https://replicate.com/yxuansu/magic/examples) of MAGIC that is super easy to use and to interact with. Check it out!
 
 ****
 
