@@ -1,0 +1,28 @@
+build:
+  cuda: "11.0"
+  gpu: true
+  python_version: "3.8"
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+    - "ninja-build"
+  python_packages:
+    - "ipython==7.21.0"
+    - "torch==1.10.1"
+    - "torchvision==0.11.2"
+    - "absl-py==1.0.0"
+    - "sacrebleu==1.4.10"
+    - "seaborn==0.11.2"
+    - "pandas==1.4.2"
+    - "matplotlib==3.4.3"
+    - "spacy==3.3.0"
+    - "sentencepiece==0.1.96"
+    - "nltk==3.7"
+    - "PyYAML==5.4.1"
+    - "transformers==4.7.0"
+    - "scikit-learn==1.0"
+    - "progressbar==2.5"
+    - "six==1.16.0"
+    - "numpy==1.20.3"
+
+predict: "predict.py:Predictor"
