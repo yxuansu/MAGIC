@@ -61,45 +61,18 @@ Generative language models (LMs) such as GPT-2/3 can be prompted to generate tex
 If you find our paper and resources useful, please kindly leave a star and cite our papers. Thanks!
 
 ```bibtex
-@article{DBLP:journals/corr/abs-2205-02655,
-  author    = {Yixuan Su and
-               Tian Lan and
-               Yahui Liu and
-               Fangyu Liu and
-               Dani Yogatama and
-               Yan Wang and
-               Lingpeng Kong and
-               Nigel Collier},
-  title     = {Language Models Can See: Plugging Visual Controls in Text Generation},
-  journal   = {CoRR},
-  volume    = {abs/2205.02655},
-  year      = {2022},
-  url       = {https://doi.org/10.48550/arXiv.2205.02655},
-  doi       = {10.48550/arXiv.2205.02655},
-  eprinttype = {arXiv},
-  eprint    = {2205.02655},
-  timestamp = {Wed, 11 May 2022 17:29:40 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2205-02655.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@article{su2022language,
+  title={Language Models Can See: Plugging Visual Controls in Text Generation},
+  author={Su, Yixuan and Lan, Tian and Liu, Yahui and Liu, Fangyu and Yogatama, Dani and Wang, Yan and Kong, Lingpeng and Collier, Nigel},
+  journal={arXiv preprint arXiv:2205.02655},
+  year={2022}
 }
 
-@article{DBLP:journals/corr/abs-2202-06417,
-  author    = {Yixuan Su and
-               Tian Lan and
-               Yan Wang and
-               Dani Yogatama and
-               Lingpeng Kong and
-               Nigel Collier},
-  title     = {A Contrastive Framework for Neural Text Generation},
-  journal   = {CoRR},
-  volume    = {abs/2202.06417},
-  year      = {2022},
-  url       = {https://arxiv.org/abs/2202.06417},
-  eprinttype = {arXiv},
-  eprint    = {2202.06417},
-  timestamp = {Fri, 18 Feb 2022 12:23:53 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2202-06417.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@article{su2022contrastive,
+  title={A Contrastive Framework for Neural Text Generation},
+  author={Su, Yixuan and Lan, Tian and Wang, Yan and Yogatama, Dani and Kong, Lingpeng and Collier, Nigel},
+  journal={arXiv preprint arXiv:2202.06417},
+  year={2022}
 }
 ```
 
